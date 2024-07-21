@@ -25,8 +25,6 @@ trait RotaAtual
   }
 
   public function isRotaAtiva(): string {
-
-
     return Route::currentRouteName();
   }
 }

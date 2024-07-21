@@ -116,6 +116,16 @@
     .rotaalternativa .navlinks button {
       background-color: var(--azul-principal);
       color: white;
+      transition: .5s ease;
+      border: none;
+      border-radius: 10px;
+    }
+
+    .rotaalternativa .navlinks button:hover {
+      border: 1px solid var(--azul-principal);
+      background-color: white;
+      color: var(--azul-principal);
+      cursor: pointer;
     }
 
     .mobile {
@@ -411,6 +421,15 @@
         border: 1px solid var(--azul-principal);
         border-radius: 10px;
         margin: 1rem auto;
+        transition: .5s ease;
+      }
+
+      .mobile-menu .download-button:hover,
+      .mobile-menu .contato-button:hover {
+        cursor: pointer;
+        color: white;
+        background-color: var(--azul-principal);
+        border: 1px solid white;
       }
 
       .open {

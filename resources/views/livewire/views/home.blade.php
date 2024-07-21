@@ -1,6 +1,5 @@
 <div>
-  @if(!$isMobile)
-    <main>
+    <main id="home-main-desktop">
       <div class="container">
         <div class="container-left">
           <h1>
@@ -23,7 +22,7 @@
         </div>
       </div>
     </main>
-    <div class="footer">
+    <div class="footer" id="home-footer-desktop">
       <livewire:componentes.gerais.whatsapp-icon/>
       <div class="subfooter">
         <div class="subfooter-left">
@@ -52,8 +51,7 @@
         </div>
       </div>
     </div>
-  @else
-    <main class="{{ $isRotaAlternativa ? 'rotaalternativa' : ''}}">
+    <main class="{{ $isRotaAlternativa ? 'rotaalternativa' : ''}}" id="home-main-mobile" >
       <div class="container">
         <div class="container-top">
           <livewire:componentes.gerais.mobile.cacto-home />
@@ -78,11 +76,14 @@
       </div>
       <livewire:componentes.footer.footer />
     </main>
-  @endif
   <script>
     window.addEventListener('DOMContentLoaded', function () {
       if (window.innerWidth < 820) {
-        Livewire.dispatch('mobile')
+        document.getElementById('home-main-desktop').style.display = 'none';
+        document.getElementById('home-footer-desktop').style.display = 'none';
+        // Livewire.dispatch('mobile')
+      } else {
+        document.getElementById('home-main-mobile').style.display = 'none';
       }
     })
   </script>
@@ -233,6 +234,15 @@
     }
 
     @media screen and (max-width: 2560px) {
+      #home-footer-desktop,
+      #home-main-desktop {
+        display: block;
+      }
+
+      #home-main-mobile {
+        display: none;
+      }
+
       .container {
         height: 70vh;
       }
@@ -730,6 +740,15 @@
     }
 
     @media screen and (max-width: 820px) {
+      #home-footer-desktop,
+      #home-main-desktop {
+        display: none;
+      }
+
+      #home-main-mobile {
+        display: block;
+      }
+
       .footer {
         display: none;
       }

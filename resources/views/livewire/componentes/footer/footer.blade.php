@@ -1,16 +1,7 @@
 <footer>
-  @if($isMobile)
-    <livewire:componentes.gerais.whatsapp-icon class="whatsapp-icon"/>
-  @endif
+  <img src="{{ asset('imagens/Mobile/WhatsappIcon.png') }}" alt="" class="whatsapp-icon-footer"/>
   <span>Copyright ® 2024 Todos os direitos reservados</span>
   <span>Criado por SF Sistemas & UX Bayo</span>
-  <script>
-    window.addEventListener('DOMContentLoaded', function () {
-      if (window.innerWidth < 820) {
-        Livewire.dispatch('mobile')
-      }
-    })
-  </script>
   <style>
     footer {
       width: 100vw;
@@ -82,7 +73,7 @@
         bottom: 0;
       }
 
-      .whatsapp-icon {
+      .whatsapp-icon-footer {
         scale: 0.5;
         position: absolute;
         left: 10px;
@@ -95,7 +86,7 @@
         font-size: calc(0.5rem * 600 / 820);
       }
 
-      .whatsapp-icon {
+      .whatsapp-icon-footer {
         left: calc(10px * 600 / 820);
         bottom: -20px;
       }
@@ -106,7 +97,7 @@
         font-size: calc(0.5rem * 400 / 820);
       }
 
-      .whatsapp-icon {
+      .whatsapp-icon-footer {
         left: calc(10px * 400 / 820);
         bottom: -20px;
       }
@@ -117,7 +108,7 @@
         font-size: calc(0.5rem * 300 / 820);
       }
 
-      .whatsapp-icon {
+      .whatsapp-icon-footer {
         left: calc(10px * 300 / 820);
         bottom: -20px;
       }

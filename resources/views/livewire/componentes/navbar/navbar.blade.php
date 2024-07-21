@@ -403,14 +403,14 @@
       .mobile-menu .contato-button {
         display: block;
         padding: 1rem 2rem;
-        width: 100%;
+        width: 80%;
         color: var(--azul-principal);
         font-family: Nunito, sans-serif;
         font-weight: 700;
         background-color: white;
         border: 1px solid var(--azul-principal);
         border-radius: 10px;
-        margin-top: 1rem;
+        margin: 1rem auto;
       }
 
       .open {

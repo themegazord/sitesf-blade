@@ -81,10 +81,18 @@
     }
 
     .container-solucoes-supermerc-left button {
+      border: none;
+      border-radius: 10px;
       width: 40%;
       margin-left: 9rem;
       background-color: #63c7f5;
       color: white;
+      transition: .5s ease;
+    }
+
+    .container-solucoes-supermerc-left button:hover {
+      background-color: #198dbf;
+      cursor: pointer;
     }
 
     .container-solucoes-supermerc-right {

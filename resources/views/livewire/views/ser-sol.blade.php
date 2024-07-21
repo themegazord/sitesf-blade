@@ -9,7 +9,7 @@
           específicas de cada segmento. Clique sobre o segmento para conhecer mais:
         </p>
         <div class="lista-servicos">
-          <a href="#">
+          <a href="/solucoes/barrestaurante">
             <span>
               <img src="{{ asset('imagens/Servicos/VerificadoSolucao.png') }}" alt=""/>
               <p>Para <b>Bares e Restaurantes</b></p>

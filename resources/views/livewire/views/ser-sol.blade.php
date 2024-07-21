@@ -15,7 +15,7 @@
               <p>Para <b>Bares e Restaurantes</b></p>
             </span>
           </a>
-          <a href="#">
+          <a href="/solucoes/supermercadomercearia">
             <span>
               <img src="{{ asset('imagens/Servicos/VerificadoSolucao.png') }}" alt=""/>
               <p>Para <b>Supermecados e Mercearias</b></p>

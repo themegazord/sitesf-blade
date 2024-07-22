@@ -21,7 +21,7 @@
               <p>Para <b>Supermecados e Mercearias</b></p>
             </span>
           </a>
-          <a href="#">
+          <a href="/solucoes/roupacalcado">
             <span>
               <img src="{{ asset('imagens/Servicos/VerificadoSolucao.png') }}" alt=""/>
               <p>Para <b>Lojas de Roupa e Calçados</b></p>
@@ -79,61 +79,61 @@
         segmento para conhecer mais:
       </p>
       <div class="lista-servicos-mobile">
-        <a href="#">
+          <a href="/solucoes/barrestaurante">
             <span>
               <img src="{{ asset('imagens/Servicos/VerificadoSolucao.png') }}" alt=""/>
               <p>Para <b>Bares e Restaurantes</b></p>
             </span>
-        </a>
-        <a href="#">
+          </a>
+          <a href="/solucoes/supermercadomercearia">
             <span>
               <img src="{{ asset('imagens/Servicos/VerificadoSolucao.png') }}" alt=""/>
               <p>Para <b>Supermecados e Mercearias</b></p>
             </span>
-        </a>
-        <a href="#">
+          </a>
+          <a href="/solucoes/roupacalcado">
             <span>
               <img src="{{ asset('imagens/Servicos/VerificadoSolucao.png') }}" alt=""/>
               <p>Para <b>Lojas de Roupa e Calçados</b></p>
             </span>
-        </a>
-        <a href="#">
+          </a>
+          <a href="#">
             <span>
               <img src="{{ asset('imagens/Servicos/VerificadoSolucao.png') }}" alt=""/>
               <p>Para <b>Auto Elétrica e Oficinas</b></p>
             </span>
-        </a>
-        <a href="#">
+          </a>
+          <a href="#">
             <span>
               <img src="{{ asset('imagens/Servicos/VerificadoSolucao.png') }}" alt=""/>
               <p>Para <b>Distribuidores e Conveniencias</b></p>
             </span>
-        </a>
-        <a href="#">
+          </a>
+          <a href="#">
             <span>
               <img src="{{ asset('imagens/Servicos/VerificadoSolucao.png') }}" alt=""/>
               <p>Para <b>Fábricas de Pequeno Porte</b></p>
             </span>
-        </a>
-        <a href="#">
+          </a>
+          <a href="#">
             <span>
               <img src="{{ asset('imagens/Servicos/VerificadoSolucao.png') }}" alt=""/>
               <p>Para <b>Confecções</b></p>
             </span>
-        </a>
-        <a href="#">
+          </a>
+          <a href="#">
             <span>
               <img src="{{ asset('imagens/Servicos/VerificadoSolucao.png') }}" alt=""/>
               <p>Para <b>Eventos</b></p>
             </span>
-        </a>
-        <a href="#">
+          </a>
+          <a href="#">
             <span>
               <img src="{{ asset('imagens/Servicos/VerificadoSolucao.png') }}" alt=""/>
               <p>Para <b>Licitações</b></p>
             </span>
-        </a>
-      </div>
+          </a>
+        </div>
       <div class="container-sersol-mobile-imagem">
         <img src="{{ asset('imagens/Mobile/Servicos/ImagemBottomSerSol.png') }}" alt="">
       </div>

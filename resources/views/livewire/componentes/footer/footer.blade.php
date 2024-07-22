@@ -72,7 +72,9 @@
         padding: 0;
         justify-content: center;
         align-items: center;
-        position: absolute;
+        position: fixed;
+        z-index: 2;
+        right: 0;
         height: 3vh;
         bottom: 0;
       }

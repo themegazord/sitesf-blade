@@ -27,7 +27,7 @@
               <p>Para <b>Lojas de Roupa e Calçados</b></p>
             </span>
           </a>
-          <a href="#">
+          <a href="/solucoes/autoelecoficina">
             <span>
               <img src="{{ asset('imagens/Servicos/VerificadoSolucao.png') }}" alt=""/>
               <p>Para <b>Auto Elétrica e Oficinas</b></p>
@@ -97,7 +97,7 @@
               <p>Para <b>Lojas de Roupa e Calçados</b></p>
             </span>
           </a>
-          <a href="#">
+          <a href="/solucoes/autoelecoficina">
             <span>
               <img src="{{ asset('imagens/Servicos/VerificadoSolucao.png') }}" alt=""/>
               <p>Para <b>Auto Elétrica e Oficinas</b></p>

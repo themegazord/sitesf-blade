@@ -39,7 +39,7 @@
               <p>Para <b>Distribuidores e Conveniencias</b></p>
             </span>
           </a>
-          <a href="#">
+          <a href="/solucoes/fabpeqporte">
             <span>
               <img src="{{ asset('imagens/Servicos/VerificadoSolucao.png') }}" alt=""/>
               <p>Para <b>Fábricas de Pequeno Porte</b></p>
@@ -109,7 +109,7 @@
               <p>Para <b>Distribuidores e Conveniencias</b></p>
             </span>
           </a>
-          <a href="#">
+          <a href="/solucoes/fabpeqporte">
             <span>
               <img src="{{ asset('imagens/Servicos/VerificadoSolucao.png') }}" alt=""/>
               <p>Para <b>Fábricas de Pequeno Porte</b></p>

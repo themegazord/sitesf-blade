@@ -19,7 +19,7 @@
             Entre em contato conosco hoje mesmo e descubra como podemos impulsionar o seu negócio!
           </b>
         </p>
-        <button>Clique aqui e fale com nosso time</button>
+        <button onclick="envio()">Clique aqui e fale com nosso time</button>
       </div>
       <div class="container-parceiros-right">
         <img src="{{ asset('imagens/Parceiros/ParceirosImagem.png') }}" alt="" />
@@ -36,7 +36,17 @@
     </div>
     <livewire:componentes.footer.footer />
   </main>
-  <script></script>
+  <script>
+    function envio() {
+      const mensagem = encodeURI(
+        `Olá 😊.$Fiquei interessado no seu sistema, poderia me contar um pouco mais sobre?`
+      )
+
+      window.open(
+        `https://api.whatsapp.com/send?phone=5567999832455&text=${mensagem.replaceAll('$', '%0D')}`
+      )
+    }
+  </script>
   <style>
     main {
       height: 87vh;

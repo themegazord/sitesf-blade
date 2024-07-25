@@ -31,7 +31,7 @@
       </div>
       <div class="container-quemsomos-right">
         <img src="{{ asset('imagens/QuemSomosImgRight.png') }}" alt="" />
-        <button wire:click="envio">Clique aqui e fale com nosso time</button>
+        <button onclick="envio()">Clique aqui e fale com nosso time</button>
       </div>
     </div>
   </main>
@@ -53,7 +53,7 @@
       </p>
       <div class="container-quemsomos-mobile-imagem">
         <img src="{{ asset('imagens/QuemSomosImgRight.png') }}" alt="" />
-        <button @click="envio">Clique aqui e fale com nosso time</button>
+        <button onclick="envio()">Clique aqui e fale com nosso time</button>
       </div>
       <p>
         Equipado com ferramentas avançadas de análise gerencial, o <b>SAFI</b> oferece aos
@@ -70,7 +70,17 @@
     </div>
   </main>
   <livewire:componentes.footer.footer />
-  <script></script>
+  <script>
+    function envio() {
+      const mensagem = encodeURI(
+        `Olá 😊.$Fiquei interessado no seu sistema, poderia me contar um pouco mais sobre?`
+      )
+
+      window.open(
+        `https://api.whatsapp.com/send?phone=5567999832455&text=${mensagem.replaceAll('$', '%0D')}`
+      )
+    }
+  </script>
   <style>
     main {
       background-color: var(--cinza-principal);

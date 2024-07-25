@@ -11,8 +11,8 @@
             profissionalismo.
           </h4>
           <div class="botoes">
-            <button>Fale Conosco</button>
-            <a href="#">
+            <button onclick="envio()">Fale Conosco</button>
+            <a href="/solucoes">
               <button>Saiba Mais</button>
             </a>
           </div>
@@ -23,7 +23,7 @@
       </div>
     </main>
     <div class="footer" id="home-footer-desktop">
-      <livewire:componentes.gerais.whatsapp-icon/>
+      <livewire:componentes.gerais.whatsapp-icon />
       <div class="subfooter">
         <div class="subfooter-left">
           <img src="{{ asset('imagens/LogoAzul.png') }}" alt="">
@@ -66,7 +66,7 @@
             qualidade e profissionalismo.
           </h4>
           <div class="botoes">
-            <button @click="envio">Fale Conosco</button>
+            <button onclick="envio()">Fale Conosco</button>
             <a href="#">
               <button>Saiba Mais</button>
             </a>

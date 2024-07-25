@@ -139,7 +139,7 @@
             </button>
           </div>
         </div>
-        <img src="{{ asset('imagens/Whatsapp.png') }}" alt="" class="whatsapp" @click="envio" />
+        <img src="{{ asset('imagens/Whatsapp.png') }}" alt="" class="whatsapp" onclick="envio()" />
       </div>
     </div>
   </main>
@@ -152,13 +152,21 @@
       if (window.innerWidth <= 820) {
         modulos.style.display = 'none';
         modulosMobile.style.display = 'block';
-        console.log('dawmdpawdmapwdaw')
       } else {
-        console.log("dawwa")
         modulos.style.display = 'grid';
         modulosMobile.style.display = 'none';
       }
     })
+
+    function envio() {
+      const mensagem = encodeURI(
+        `Olá 😊.$Fiquei interessado no seu sistema, poderia me contar um pouco mais sobre?`
+      )
+
+      window.open(
+        `https://api.whatsapp.com/send?phone=5567999832455&text=${mensagem.replaceAll('$', '%0D')}`
+      )
+    }
   </script>
   <style>
     main {
@@ -993,6 +1001,7 @@
         display: none;
       }
     }
+
     @media screen and (max-width: 520px) {
       main {
         background-color: white;

@@ -1,9 +1,9 @@
 <div>
-  <nav class="desktop {{ $isRotaAlternativa ? 'rotaalternativa' : ''}}">
-    @if($isRotaAlternativa)
-      <img alt="" class="logo" src="{{ asset('imagens/LogoAzul.png') }}"/>
+  <nav class="desktop {{ $isRotaAlternativa ? 'rotaalternativa' : '' }}">
+    @if ($isRotaAlternativa)
+      <img alt="" class="logo" src="{{ asset('imagens/LogoAzul.png') }}" onclick="goToHome()"/>
     @else
-      <img alt="" class="logo" src="{{ asset('imagens/Logo.png') }}"/>
+      <img alt="" class="logo" src="{{ asset('imagens/Logo.png') }}"  onclick="goToHome()"/>
     @endif
     <div class="navlinks">
       <a class="{{ $isRotaAtiva === 'home' ? 'linkativo' : '' }}" href="/">Inicio</a>
@@ -12,21 +12,22 @@
       <a class="{{ $isRotaAtiva === 'solucoes' ? 'linkativo' : '' }}" href="/solucoes">Serviços e Soluções</a>
       <a class="{{ $isRotaAtiva === 'parceiros' ? 'linkativo' : '' }}" href="/parceiros">Parceiros</a>
       <button wire:click="download">Baixe nosso app</button>
-      <button>Fale Conosco</button>
+      <button onclick="envio()">Fale Conosco</button>
     </div>
   </nav>
   <nav class="mobile">
     <div class="topo">
-      @if($isRotaAlternativa)
-        <img alt="" class="logo" src="{{ asset('imagens/LogoAzul.png') }}"/>
+      @if ($isRotaAlternativa)
+        <img alt="" class="logo" src="{{ asset('imagens/LogoAzul.png') }}" />
       @else
-        <img alt="" class="logo" src="{{ asset('imagens/Logo.png') }}"/>
+        <img alt="" class="logo" src="{{ asset('imagens/Logo.png') }}" />
       @endif
-      @if($isRotaAlternativa)
+      @if ($isRotaAlternativa)
         <button onclick="menuShow()"><img alt="" class="hamburguer"
-                                          src="{{ asset('imagens/HamburguerMobileAzul.png') }}"/></button>
+            src="{{ asset('imagens/HamburguerMobileAzul.png') }}" /></button>
       @else
-        <button onclick="menuShow()"><img alt="" class="hamburguer" src="{{ asset('imagens/HamburguerMobile.png') }}"/>
+        <button onclick="menuShow()"><img alt="" class="hamburguer"
+            src="{{ asset('imagens/HamburguerMobile.png') }}" />
         </button>
       @endif
     </div>
@@ -37,14 +38,16 @@
         </li>
         <li class="nav-item"><a class="{{ $isRotaAtiva === 'quemsomos' ? 'linkativo' : '' }}" href="/quemsomos">Quem
             somos</a></li>
-        <li class="nav-item"><a class="{{ $isRotaAtiva === 'solucoes' ? 'linkativo' : '' }}" href="/solucoes">Serviços e
+        <li class="nav-item"><a class="{{ $isRotaAtiva === 'solucoes' ? 'linkativo' : '' }}" href="/solucoes">Serviços
+            e
             Soluções</a></li>
-        <li class="nav-item"><a class="{{ $isRotaAtiva === 'parceiros' ? 'linkativo' : '' }}" href="/parceiros">Parceiros</a>
+        <li class="nav-item"><a class="{{ $isRotaAtiva === 'parceiros' ? 'linkativo' : '' }}"
+            href="/parceiros">Parceiros</a>
         </li>
       </ul>
 
       <button wire:click="download" class="download-button">Baixe nosso app</button>
-      <button class="contato-button">Fale Conosco</button>
+      <button class="contato-button" onclick="envio()">Fale Conosco</button>
     </div>
   </nav>
   <script>
@@ -55,6 +58,20 @@
       } else {
         menuMobile.classList.add('open');
       }
+    }
+
+    function envio() {
+      const mensagem = encodeURI(
+        `Olá 😊.$Fiquei interessado no seu sistema, poderia me contar um pouco mais sobre?`
+      )
+
+      window.open(
+        `https://api.whatsapp.com/send?phone=5567999832455&text=${mensagem.replaceAll('$', '%0D')}`
+      )
+    }
+
+    function goToHome() {
+      window.location.href = '/';
     }
   </script>
   <style>
@@ -88,6 +105,10 @@
       height: 10px;
       background-color: var(--azul-principal);
       border-radius: 50%;
+    }
+
+    .logo {
+      cursor: pointer;
     }
 
     .navlinks button {
@@ -357,6 +378,7 @@
     }
 
     @media screen and (max-width: 820px) {
+
       .desktop,
       .mobile-menu {
         display: none;
@@ -377,7 +399,7 @@
         height: 1rem;
       }
 
-      .mobile .topo > button {
+      .mobile .topo>button {
         background-color: transparent;
         border: none;
         cursor: pointer;
@@ -404,7 +426,7 @@
         padding-top: 1.2rem;
       }
 
-      .mobile-menu .nav-item > a {
+      .mobile-menu .nav-item>a {
         color: white;
         text-decoration: none;
       }

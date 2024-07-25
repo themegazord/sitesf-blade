@@ -11,62 +11,62 @@
         <div class="lista-servicos">
           <a href="/solucoes/barrestaurante">
             <span>
-              <img src="{{ asset('imagens/Servicos/VerificadoSolucao.png') }}" alt=""/>
+              <img src="{{ asset('imagens/Servicos/VerificadoSolucao.png') }}" alt="" />
               <p>Para <b>Bares e Restaurantes</b></p>
             </span>
           </a>
           <a href="/solucoes/supermercadomercearia">
             <span>
-              <img src="{{ asset('imagens/Servicos/VerificadoSolucao.png') }}" alt=""/>
+              <img src="{{ asset('imagens/Servicos/VerificadoSolucao.png') }}" alt="" />
               <p>Para <b>Supermecados e Mercearias</b></p>
             </span>
           </a>
           <a href="/solucoes/roupacalcado">
             <span>
-              <img src="{{ asset('imagens/Servicos/VerificadoSolucao.png') }}" alt=""/>
+              <img src="{{ asset('imagens/Servicos/VerificadoSolucao.png') }}" alt="" />
               <p>Para <b>Lojas de Roupa e Calçados</b></p>
             </span>
           </a>
           <a href="/solucoes/autoelecoficina">
             <span>
-              <img src="{{ asset('imagens/Servicos/VerificadoSolucao.png') }}" alt=""/>
+              <img src="{{ asset('imagens/Servicos/VerificadoSolucao.png') }}" alt="" />
               <p>Para <b>Auto Elétrica e Oficinas</b></p>
             </span>
           </a>
           <a href="/solucoes/discconv">
             <span>
-              <img src="{{ asset('imagens/Servicos/VerificadoSolucao.png') }}" alt=""/>
+              <img src="{{ asset('imagens/Servicos/VerificadoSolucao.png') }}" alt="" />
               <p>Para <b>Distribuidores e Conveniencias</b></p>
             </span>
           </a>
           <a href="/solucoes/fabpeqporte">
             <span>
-              <img src="{{ asset('imagens/Servicos/VerificadoSolucao.png') }}" alt=""/>
+              <img src="{{ asset('imagens/Servicos/VerificadoSolucao.png') }}" alt="" />
               <p>Para <b>Fábricas de Pequeno Porte</b></p>
             </span>
           </a>
           <a href="/solucoes/confeccoes">
             <span>
-              <img src="{{ asset('imagens/Servicos/VerificadoSolucao.png') }}" alt=""/>
+              <img src="{{ asset('imagens/Servicos/VerificadoSolucao.png') }}" alt="" />
               <p>Para <b>Confecções</b></p>
             </span>
           </a>
           <a href="#">
             <span>
-              <img src="{{ asset('imagens/Servicos/VerificadoSolucao.png') }}" alt=""/>
+              <img src="{{ asset('imagens/Servicos/VerificadoSolucao.png') }}" alt="" />
               <p>Para <b>Eventos</b></p>
             </span>
           </a>
           <a href="#">
             <span>
-              <img src="{{ asset('imagens/Servicos/VerificadoSolucao.png') }}" alt=""/>
+              <img src="{{ asset('imagens/Servicos/VerificadoSolucao.png') }}" alt="" />
               <p>Para <b>Licitações</b></p>
             </span>
           </a>
         </div>
       </div>
       <div class="container-sersol-right">
-        <img src="{{ asset('imagens/Servicos/ImagemSolucaoRight.png') }}" alt=""/>
+        <img src="{{ asset('imagens/Servicos/ImagemSolucaoRight.png') }}" alt="" />
       </div>
     </div>
   </main>
@@ -74,72 +74,73 @@
     <div class="container-sersol-mobile">
       <h3>Serviços e Soluções</h3>
       <p>
-        No dinamismo do mercado atual, a personalização é o <b>diferencial que impulsiona o sucesso</b>. Nossas soluções são
+        No dinamismo do mercado atual, a personalização é o <b>diferencial que impulsiona o sucesso</b>. Nossas soluções
+        são
         cuidadosamente desenhadas para se alinhar com as necessidades específicas de cada segmento. Clique sobre o
         segmento para conhecer mais:
       </p>
       <div class="lista-servicos-mobile">
-          <a href="/solucoes/barrestaurante">
-            <span>
-              <img src="{{ asset('imagens/Servicos/VerificadoSolucao.png') }}" alt=""/>
-              <p>Para <b>Bares e Restaurantes</b></p>
-            </span>
-          </a>
-          <a href="/solucoes/supermercadomercearia">
-            <span>
-              <img src="{{ asset('imagens/Servicos/VerificadoSolucao.png') }}" alt=""/>
-              <p>Para <b>Supermecados e Mercearias</b></p>
-            </span>
-          </a>
-          <a href="/solucoes/roupacalcado">
-            <span>
-              <img src="{{ asset('imagens/Servicos/VerificadoSolucao.png') }}" alt=""/>
-              <p>Para <b>Lojas de Roupa e Calçados</b></p>
-            </span>
-          </a>
-          <a href="/solucoes/autoelecoficina">
-            <span>
-              <img src="{{ asset('imagens/Servicos/VerificadoSolucao.png') }}" alt=""/>
-              <p>Para <b>Auto Elétrica e Oficinas</b></p>
-            </span>
-          </a>
-          <a href="/solucoes/discconv">
-            <span>
-              <img src="{{ asset('imagens/Servicos/VerificadoSolucao.png') }}" alt=""/>
-              <p>Para <b>Distribuidores e Conveniencias</b></p>
-            </span>
-          </a>
-          <a href="/solucoes/fabpeqporte">
-            <span>
-              <img src="{{ asset('imagens/Servicos/VerificadoSolucao.png') }}" alt=""/>
-              <p>Para <b>Fábricas de Pequeno Porte</b></p>
-            </span>
-          </a>
-          <a href="/solucoes/confeccoes">
-            <span>
-              <img src="{{ asset('imagens/Servicos/VerificadoSolucao.png') }}" alt=""/>
-              <p>Para <b>Confecções</b></p>
-            </span>
-          </a>
-          <a href="#">
-            <span>
-              <img src="{{ asset('imagens/Servicos/VerificadoSolucao.png') }}" alt=""/>
-              <p>Para <b>Eventos</b></p>
-            </span>
-          </a>
-          <a href="#">
-            <span>
-              <img src="{{ asset('imagens/Servicos/VerificadoSolucao.png') }}" alt=""/>
-              <p>Para <b>Licitações</b></p>
-            </span>
-          </a>
-        </div>
+        <a href="/solucoes/barrestaurante">
+          <span>
+            <img src="{{ asset('imagens/Servicos/VerificadoSolucao.png') }}" alt="" />
+            <p>Para <b>Bares e Restaurantes</b></p>
+          </span>
+        </a>
+        <a href="/solucoes/supermercadomercearia">
+          <span>
+            <img src="{{ asset('imagens/Servicos/VerificadoSolucao.png') }}" alt="" />
+            <p>Para <b>Supermecados e Mercearias</b></p>
+          </span>
+        </a>
+        <a href="/solucoes/roupacalcado">
+          <span>
+            <img src="{{ asset('imagens/Servicos/VerificadoSolucao.png') }}" alt="" />
+            <p>Para <b>Lojas de Roupa e Calçados</b></p>
+          </span>
+        </a>
+        <a href="/solucoes/autoelecoficina">
+          <span>
+            <img src="{{ asset('imagens/Servicos/VerificadoSolucao.png') }}" alt="" />
+            <p>Para <b>Auto Elétrica e Oficinas</b></p>
+          </span>
+        </a>
+        <a href="/solucoes/discconv">
+          <span>
+            <img src="{{ asset('imagens/Servicos/VerificadoSolucao.png') }}" alt="" />
+            <p>Para <b>Distribuidores e Conveniencias</b></p>
+          </span>
+        </a>
+        <a href="/solucoes/fabpeqporte">
+          <span>
+            <img src="{{ asset('imagens/Servicos/VerificadoSolucao.png') }}" alt="" />
+            <p>Para <b>Fábricas de Pequeno Porte</b></p>
+          </span>
+        </a>
+        <a href="/solucoes/confeccoes">
+          <span>
+            <img src="{{ asset('imagens/Servicos/VerificadoSolucao.png') }}" alt="" />
+            <p>Para <b>Confecções</b></p>
+          </span>
+        </a>
+        <a href="#">
+          <span>
+            <img src="{{ asset('imagens/Servicos/VerificadoSolucao.png') }}" alt="" />
+            <p>Para <b>Eventos</b></p>
+          </span>
+        </a>
+        <a href="#">
+          <span>
+            <img src="{{ asset('imagens/Servicos/VerificadoSolucao.png') }}" alt="" />
+            <p>Para <b>Licitações</b></p>
+          </span>
+        </a>
+      </div>
       <div class="container-sersol-mobile-imagem">
         <img src="{{ asset('imagens/Mobile/Servicos/ImagemBottomSerSol.png') }}" alt="">
       </div>
     </div>
   </main>
-  <livewire:componentes.footer.footer/>
+  <livewire:componentes.footer.footer />
   <script></script>
   <style>
     main {
@@ -168,12 +169,24 @@
       align-items: center;
     }
 
+    .container-sersol-right::after {
+      content: '';
+      height: 700px;
+      width: 700px;
+      position: absolute;
+      z-index: 0;
+      left: 1350px;
+      top: 120px;
+      border-radius: 100%;
+      background-color: var(--azul-principal);
+    }
+
     .container-sersol-right img {
       height: 600px;
       z-index: 1;
     }
 
-    .container-sersol-left > p {
+    .container-sersol-left>p {
       font-family: Be Vietnam Pro, sans-serif;
       font-size: 0.9375rem;
       color: #4f4f50;
@@ -240,12 +253,18 @@
         gap: calc(2rem * 2560 / 1920);
       }
 
+      .container-sersol-right::after {
+        height: calc(700px * 2560 / 1920);
+        width: calc(700px * 2560 / 1920);
+        left: calc(1350px * 2560 / 1920);
+        top: calc(120px * 2560 / 1920);
+      }
 
       .container-sersol-right img {
         height: calc(600px * 2560 / 1920);
       }
 
-      .container-sersol-left > p {
+      .container-sersol-left>p {
         font-size: calc(0.9375rem * 2560 / 1920);
         width: 61%;
       }
@@ -272,6 +291,7 @@
         width: 40%;
       }
     }
+
     @media screen and (max-width: 1920px) {
       main {
         height: 87vh;
@@ -288,12 +308,18 @@
         gap: calc(2rem * 1920 / 1920);
       }
 
+      .container-sersol-right::after {
+        height: calc(700px * 1920 / 1920);
+        width: calc(700px * 1920 / 1920);
+        left: calc(1350px * 1920 / 1920);
+        top: calc(120px * 1920 / 1920);
+      }
 
       .container-sersol-right img {
         height: calc(600px * 1920 / 1920);
       }
 
-      .container-sersol-left > p {
+      .container-sersol-left>p {
         font-size: calc(0.9375rem * 1920 / 1920);
         width: 61%;
       }
@@ -320,6 +346,7 @@
         width: 40%;
       }
     }
+
     @media screen and (max-width: 1600px) {
       main {
         height: 86vh;
@@ -336,12 +363,18 @@
         gap: calc(2rem * 1600 / 1920);
       }
 
+      .container-sersol-right::after {
+        height: calc(700px * 1600 / 1920);
+        width: calc(700px * 1600 / 1920);
+        left: calc(1350px * 1600 / 1920);
+        top: calc(120px * 1600 / 1920);
+      }
 
       .container-sersol-right img {
         height: calc(600px * 1600 / 1920);
       }
 
-      .container-sersol-left > p {
+      .container-sersol-left>p {
         font-size: calc(0.9375rem * 1600 / 1920);
         width: 61%;
       }
@@ -368,6 +401,7 @@
         width: 40%;
       }
     }
+
     @media screen and (max-width: 1440px) {
       main {
         height: 87vh;
@@ -384,12 +418,18 @@
         gap: calc(2rem * 1440 / 1920);
       }
 
+      .container-sersol-right::after {
+        height: calc(700px * 1440 / 1920);
+        width: calc(700px * 1440 / 1920);
+        left: calc(1350px * 1440 / 1920);
+        top: calc(120px * 1440 / 1920);
+      }
 
       .container-sersol-right img {
         height: calc(600px * 1440 / 1920);
       }
 
-      .container-sersol-left > p {
+      .container-sersol-left>p {
         font-size: calc(0.9375rem * 1440 / 1920);
         width: 61%;
       }
@@ -416,6 +456,7 @@
         width: 40%;
       }
     }
+
     @media screen and (max-width: 1366px) {
       main {
         height: 85vh;
@@ -432,12 +473,18 @@
         gap: calc(2rem * 1366 / 1920);
       }
 
+      .container-sersol-right::after {
+        height: calc(700px * 1366 / 1920);
+        width: calc(700px * 1366 / 1920);
+        left: calc(1350px * 1366 / 1920);
+        top: calc(120px * 1366 / 1920);
+      }
 
       .container-sersol-right img {
         height: calc(600px * 1366 / 1920);
       }
 
-      .container-sersol-left > p {
+      .container-sersol-left>p {
         font-size: calc(0.9375rem * 1366 / 1920);
         width: 61%;
       }
@@ -464,6 +511,7 @@
         width: 40%;
       }
     }
+
     @media screen and (max-width: 1280px) {
       main {
         height: 85vh;
@@ -480,12 +528,18 @@
         gap: calc(2rem * 1280 / 1920);
       }
 
+      .container-sersol-right::after {
+        height: calc(700px * 1280 / 1920);
+        width: calc(700px * 1280 / 1920);
+        left: calc(1350px * 1280 / 1920);
+        top: calc(120px * 1280 / 1920);
+      }
 
       .container-sersol-right img {
         height: calc(600px * 1280 / 1920);
       }
 
-      .container-sersol-left > p {
+      .container-sersol-left>p {
         font-size: calc(0.9375rem * 1280 / 1920);
         width: 61%;
       }
@@ -512,6 +566,7 @@
         width: 40%;
       }
     }
+
     @media screen and (max-width: 1024px) {
       main {
         height: 88vh;
@@ -528,12 +583,18 @@
         gap: calc(2rem * 1024 / 1920);
       }
 
+      .container-sersol-right::after {
+        height: calc(700px * 1024 / 1920);
+        width: calc(700px * 1024 / 1920);
+        left: calc(1350px * 1024 / 1920);
+        top: calc(120px * 1024 / 1920);
+      }
 
       .container-sersol-right img {
         height: calc(600px * 1024 / 1920);
       }
 
-      .container-sersol-left > p {
+      .container-sersol-left>p {
         font-size: calc(0.9375rem * 1024 / 1920);
         width: 61%;
       }
@@ -592,7 +653,7 @@
         right: 0;
       }
 
-      .container-sersol-mobile > h3 {
+      .container-sersol-mobile>h3 {
         font-family: Be Vietnam Pro, sans-serif;
         font-size: 1.5rem;
         font-weight: 700;
@@ -600,7 +661,7 @@
         color: #686868;
       }
 
-      .container-sersol-mobile > p {
+      .container-sersol-mobile>p {
         font-family: Be Vietnam Pro, sans-serif;
         font-size: 1rem;
         color: #686868;
@@ -616,7 +677,7 @@
         top: 60%;
       }
 
-      .container-sersol-mobile-imagem > img {
+      .container-sersol-mobile-imagem>img {
         z-index: 1;
         width: 70%;
       }
@@ -661,6 +722,7 @@
         text-decoration: none;
       }
     }
+
     @media screen and (max-width: 700px) {
       #main-sersol-desktop {
         display: none;
@@ -692,7 +754,7 @@
         right: 0;
       }
 
-      .container-sersol-mobile > h3 {
+      .container-sersol-mobile>h3 {
         font-family: Be Vietnam Pro, sans-serif;
         font-size: 1.5rem;
         font-weight: 700;
@@ -700,7 +762,7 @@
         color: #686868;
       }
 
-      .container-sersol-mobile > p {
+      .container-sersol-mobile>p {
         font-family: Be Vietnam Pro, sans-serif;
         font-size: 1rem;
         color: #686868;
@@ -716,7 +778,7 @@
         top: 70%;
       }
 
-      .container-sersol-mobile-imagem > img {
+      .container-sersol-mobile-imagem>img {
         z-index: 1;
         width: 70%;
       }
@@ -761,6 +823,7 @@
         text-decoration: none;
       }
     }
+
     @media screen and (max-width: 500px) {
       #main-sersol-desktop {
         display: none;
@@ -792,7 +855,7 @@
         right: 0;
       }
 
-      .container-sersol-mobile > h3 {
+      .container-sersol-mobile>h3 {
         font-family: Be Vietnam Pro, sans-serif;
         font-size: 1.5rem;
         font-weight: 700;
@@ -800,7 +863,7 @@
         color: #686868;
       }
 
-      .container-sersol-mobile > p {
+      .container-sersol-mobile>p {
         font-family: Be Vietnam Pro, sans-serif;
         font-size: 1rem;
         color: #686868;
@@ -816,7 +879,7 @@
         top: 70%;
       }
 
-      .container-sersol-mobile-imagem > img {
+      .container-sersol-mobile-imagem>img {
         z-index: 1;
         width: 90%;
       }
@@ -861,6 +924,7 @@
         text-decoration: none;
       }
     }
+
     @media screen and (max-width: 350px) {
       #main-sersol-desktop {
         display: none;
@@ -892,7 +956,7 @@
         right: 0;
       }
 
-      .container-sersol-mobile > h3 {
+      .container-sersol-mobile>h3 {
         font-family: Be Vietnam Pro, sans-serif;
         font-size: 1.5rem;
         font-weight: 700;
@@ -900,7 +964,7 @@
         color: #686868;
       }
 
-      .container-sersol-mobile > p {
+      .container-sersol-mobile>p {
         font-family: Be Vietnam Pro, sans-serif;
         font-size: 1rem;
         color: #686868;
@@ -916,7 +980,7 @@
         top: 90%;
       }
 
-      .container-sersol-mobile-imagem > img {
+      .container-sersol-mobile-imagem>img {
         z-index: 1;
         width: 100%;
       }
@@ -961,6 +1025,7 @@
         text-decoration: none;
       }
     }
+
     @media screen and (max-width: 300px) {
       #main-sersol-desktop {
         display: none;
@@ -992,7 +1057,7 @@
         right: 0;
       }
 
-      .container-sersol-mobile > h3 {
+      .container-sersol-mobile>h3 {
         font-family: Be Vietnam Pro, sans-serif;
         font-size: 1.3rem;
         font-weight: 700;
@@ -1000,7 +1065,7 @@
         color: #686868;
       }
 
-      .container-sersol-mobile > p {
+      .container-sersol-mobile>p {
         font-family: Be Vietnam Pro, sans-serif;
         font-size: .8rem;
         color: #686868;
@@ -1016,7 +1081,7 @@
         top: 70%;
       }
 
-      .container-sersol-mobile-imagem > img {
+      .container-sersol-mobile-imagem>img {
         z-index: 1;
         width: 100%;
       }

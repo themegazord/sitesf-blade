@@ -45,7 +45,7 @@
               <p>Para <b>Fábricas de Pequeno Porte</b></p>
             </span>
           </a>
-          <a href="#">
+          <a href="/solucoes/confeccoes">
             <span>
               <img src="{{ asset('imagens/Servicos/VerificadoSolucao.png') }}" alt=""/>
               <p>Para <b>Confecções</b></p>
@@ -115,7 +115,7 @@
               <p>Para <b>Fábricas de Pequeno Porte</b></p>
             </span>
           </a>
-          <a href="#">
+          <a href="/solucoes/confeccoes">
             <span>
               <img src="{{ asset('imagens/Servicos/VerificadoSolucao.png') }}" alt=""/>
               <p>Para <b>Confecções</b></p>

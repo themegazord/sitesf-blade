@@ -14,6 +14,7 @@ use App\Livewire\Views\Solucoes\AutoEletrica;
 use App\Livewire\Views\Solucoes\DistribuidoraConveniencia;
 use App\Livewire\Views\Solucoes\FabricaPequenoPorte;
 use App\Livewire\Views\Solucoes\Confeccoes;
+use App\Livewire\Views\Solucoes\Eventos;
 
 Route::get('/', Home::class)->name('home');
 Route::get('/modulos', Modulos::class)->name('modulos');
@@ -28,4 +29,5 @@ Route::prefix('solucoes')->group(function () {
   Route::get('/discconv', DistribuidoraConveniencia::class)->name('discconv');
   Route::get('/fabpeqporte', FabricaPequenoPorte::class)->name('fabpeqporte');
   Route::get('/confeccoes', Confeccoes::class)->name('confeccoes');
+  Route::get('/eventos', Eventos::class)->name('eventos');
 });

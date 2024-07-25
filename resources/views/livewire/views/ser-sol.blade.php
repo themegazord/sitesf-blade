@@ -51,7 +51,7 @@
               <p>Para <b>Confecções</b></p>
             </span>
           </a>
-          <a href="#">
+          <a href="/solucoes/eventos">
             <span>
               <img src="{{ asset('imagens/Servicos/VerificadoSolucao.png') }}" alt="" />
               <p>Para <b>Eventos</b></p>
@@ -122,7 +122,7 @@
             <p>Para <b>Confecções</b></p>
           </span>
         </a>
-        <a href="#">
+        <a href="/solucoes/eventos">
           <span>
             <img src="{{ asset('imagens/Servicos/VerificadoSolucao.png') }}" alt="" />
             <p>Para <b>Eventos</b></p>

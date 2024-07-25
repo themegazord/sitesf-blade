@@ -11,6 +11,7 @@ use App\Livewire\Views\Solucoes\BarRestaurante;
 use App\Livewire\Views\Solucoes\SupermercadoMercearia;
 use App\Livewire\Views\Solucoes\RoupaCalcado;
 use App\Livewire\Views\Solucoes\AutoEletrica;
+use App\Livewire\Views\Solucoes\DistribuidoraConveniencia;
 
 Route::get('/', Home::class)->name('home');
 Route::get('/modulos', Modulos::class)->name('modulos');
@@ -22,4 +23,5 @@ Route::prefix('solucoes')->group(function () {
   Route::get('/supermercadomercearia', SupermercadoMercearia::class)->name('supermerc');
   Route::get('/roupacalcado', RoupaCalcado::class)->name('roupacalcado');
   Route::get('/autoelecoficina', AutoEletrica::class)->name('autoelecoficina');
+  Route::get('/discconv', DistribuidoraConveniencia::class)->name('discconv');
 });

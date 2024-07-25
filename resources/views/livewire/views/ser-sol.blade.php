@@ -33,7 +33,7 @@
               <p>Para <b>Auto Elétrica e Oficinas</b></p>
             </span>
           </a>
-          <a href="#">
+          <a href="/solucoes/discconv">
             <span>
               <img src="{{ asset('imagens/Servicos/VerificadoSolucao.png') }}" alt=""/>
               <p>Para <b>Distribuidores e Conveniencias</b></p>
@@ -103,7 +103,7 @@
               <p>Para <b>Auto Elétrica e Oficinas</b></p>
             </span>
           </a>
-          <a href="#">
+          <a href="/solucoes/discconv">
             <span>
               <img src="{{ asset('imagens/Servicos/VerificadoSolucao.png') }}" alt=""/>
               <p>Para <b>Distribuidores e Conveniencias</b></p>

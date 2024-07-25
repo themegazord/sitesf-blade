@@ -2,11 +2,11 @@
   <main>
     <div class="container-modulos">
       <div class="container-modulos-data">
-        <h1>Conheça todos os <br/>Módulos do Sistema SAFI</h1>
-        <div class="modulos">
-          <div class="card">
+        <h1>Conheça todos os <br />Módulos do Sistema SAFI</h1>
+        <div class="modulos" id="modulos">
+          <div class="card-modulos">
             <div class="cadastro">
-              <img src="{{ asset('imagens/Modulos/CadastroImagem.png') }}" alt=""/>
+              <img src="{{ asset('imagens/Modulos/CadastroImagem.png') }}" alt="" />
             </div>
             <h3>Cadastro</h3>
             <p>
@@ -14,9 +14,9 @@
               produtos, centros de custos entre outras informações utilizadas nos demais módulos.
             </p>
           </div>
-          <div class="card">
+          <div class="card-modulos">
             <div class="financeiro">
-              <img src="{{ asset('imagens/Modulos/FinanceiroImagem.png') }}" alt=""/>
+              <img src="{{ asset('imagens/Modulos/FinanceiroImagem.png') }}" alt="" />
             </div>
             <h3>Financeiro</h3>
             <p>
@@ -24,9 +24,9 @@
               de cheques e recibos, descontos de títulos entre outros processos da área financeira.
             </p>
           </div>
-          <div class="card">
+          <div class="card-modulos">
             <div class="estoque">
-              <img src="{{ asset('imagens/Modulos/EstoqueImagem.png') }}" alt=""/>
+              <img src="{{ asset('imagens/Modulos/EstoqueImagem.png') }}" alt="" />
             </div>
             <h3>Estoque</h3>
             <p>
@@ -35,9 +35,9 @@
               organização dos produtos até a análise de dados.
             </p>
           </div>
-          <div class="card">
+          <div class="card-modulos">
             <div class="caixa">
-              <img src="{{ asset('imagens/Modulos/CaixaImagem.png') }}" alt=""/>
+              <img src="{{ asset('imagens/Modulos/CaixaImagem.png') }}" alt="" />
             </div>
             <h3>Caixa</h3>
             <p>
@@ -47,12 +47,119 @@
             </p>
           </div>
         </div>
-        <img src="{{ asset('imagens/Whatsapp.png') }}" alt="" class="whatsapp" @click="envio"/>
+        <div class="modulos" id="modulosMobile">
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="3000">
+                <div class="card-modulos">
+                  <div class="cadastro">
+                    <img src="{{ asset('imagens/Modulos/CadastroImagem.png') }}" alt="" />
+                  </div>
+                  <h3>Cadastro</h3>
+                  <p>
+                    Módulo de inserção de dados básicos no ERP, como empresas, clientes, fornecedores,
+                    produtos, centros de custos entre outras informações utilizadas nos demais módulos.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <div class="card-modulos">
+                  <div class="financeiro">
+                    <img src="{{ asset('imagens/Modulos/FinanceiroImagem.png') }}" alt="" />
+                  </div>
+                  <h3>Financeiro</h3>
+                  <p>
+                    Contas a pagar, contas a receber, conciliação bancária, cobrança eletrônica, controle
+                    de cheques e recibos, descontos de títulos entre outros processos da área financeira.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <div class="card-modulos">
+                  <div class="estoque">
+                    <img src="{{ asset('imagens/Modulos/EstoqueImagem.png') }}" alt="" />
+                  </div>
+                  <h3>Estoque</h3>
+                  <p>
+                    Gerencie seu estoque com eficiência e precisão. Nosso módulo de controle de estoque
+                    oferece uma solução completa para otimizar a logística da sua empresa, desde a
+                    organização dos produtos até a análise de dados.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+              <div class="card-modulos">
+                <div class="estoque">
+                  <img src="{{ asset('imagens/Modulos/EstoqueImagem.png') }}" alt="" />
+                </div>
+                <h3>Estoque</h3>
+                <p>
+                  Gerencie seu estoque com eficiência e precisão. Nosso módulo de controle de estoque
+                  oferece uma solução completa para otimizar a logística da sua empresa, desde a
+                  organização dos produtos até a análise de dados.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+              <div class="card-modulos">
+                <div class="estoque">
+                  <img src="{{ asset('imagens/Modulos/EstoqueImagem.png') }}" alt="" />
+                </div>
+                <h3>Estoque</h3>
+                <p>
+                  Gerencie seu estoque com eficiência e precisão. Nosso módulo de controle de estoque
+                  oferece uma solução completa para otimizar a logística da sua empresa, desde a
+                  organização dos produtos até a análise de dados.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+              <div class="card-modulos">
+                <div class="caixa">
+                  <img src="{{ asset('imagens/Modulos/CaixaImagem.png') }}" alt="" />
+                </div>
+                <h3>Caixa</h3>
+                <p>
+                  Permite o recebimento de pré-vendas, vendas direto no caixa, operações inerentes a
+                  caixa (abertura, sangria, suprimentos, fechamento) procedimentos fiscais (NF-e e
+                  NFC-e), recebimento de títulos entre outros.
+                </p>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <img src="{{ asset('imagens/Whatsapp.png') }}" alt="" class="whatsapp" @click="envio" />
       </div>
     </div>
   </main>
-  <livewire:componentes.footer.footer/>
-  <script></script>
+  <livewire:componentes.footer.footer />
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const modulos = document.getElementById('modulos');
+      const modulosMobile = document.getElementById('modulosMobile');
+
+      if (window.innerWidth <= 820) {
+        modulos.style.display = 'none';
+        modulosMobile.style.display = 'block';
+        console.log('dawmdpawdmapwdaw')
+      } else {
+        console.log("dawwa")
+        modulos.style.display = 'grid';
+        modulosMobile.style.display = 'none';
+      }
+    })
+  </script>
   <style>
     main {
       background-color: var(--cinza-principal);
@@ -109,16 +216,20 @@
     }
 
     @keyframes gelatine {
+
       from,
       to {
         transform: scale(1, 1);
       }
+
       25% {
         transform: scale(0.9, 1.1);
       }
+
       50% {
         transform: scale(1.1, 0.9);
       }
+
       75% {
         transform: scale(0.95, 1.05);
       }
@@ -313,9 +424,9 @@
       }
     }
 
-    /* CSS Cards */
+    /* CSS Card-moduloss */
 
-    .card {
+    .card-modulos {
       display: flex;
       flex-direction: column;
       align-items: start;
@@ -325,21 +436,21 @@
       padding: 1rem;
     }
 
-    .card:hover {
+    .card-modulos:hover {
       cursor: pointer;
       background-color: white;
       border-radius: 8px;
       box-shadow: 6px 9px 60px 3px rgba(0, 0, 0, 0.21);
     }
 
-    .card:hover h3 {
+    .card-modulos:hover h3 {
       font-family: DM Sans, sans-serif;
       font-size: 1.25rem;
       font-weight: 700;
       color: #2c2c2c;
     }
 
-    .card h3 {
+    .card-modulos h3 {
       font-family: DM Sans, sans-serif;
       font-size: 1.25rem;
       font-weight: 700;
@@ -347,7 +458,7 @@
       transition: 0.5s ease-in;
     }
 
-    .card p {
+    .card-modulos p {
       font-family: DM Sans, sans-serif;
       font-size: 0.9375rem;
       color: #4f4f50;
@@ -397,28 +508,28 @@
       height: 2.125rem;
     }
 
-    .card div:first-child {
+    .card-modulos div:first-child {
       display: flex;
       justify-content: center;
       align-items: center;
     }
 
     @media screen and (max-width: 2560px) {
-      .card {
+      .card-modulos {
         width: 60%;
         gap: calc(1rem * 2560 / 1920);
         padding: calc(1rem * 2560 / 1920);
       }
 
-      .card:hover {
+      .card-modulos:hover {
         box-shadow: calc(6px * 2560 / 1920) calc(9px * 2560 / 1920) calc(60px * 2560 / 1920) calc(3px * 2560 / 1920) rgba(0, 0, 0, 0.21);
       }
 
-      .card h3 {
+      .card-modulos h3 {
         font-size: calc(1.25rem * 2560 / 1920);
       }
 
-      .card p {
+      .card-modulos p {
         font-size: calc(0.9375rem * 2560 / 1920);
       }
 
@@ -464,21 +575,21 @@
     }
 
     @media screen and (max-width: 1920px) {
-      .card {
+      .card-modulos {
         width: 60%;
         gap: calc(1rem * 1920 / 1920);
         padding: calc(1rem * 1920 / 1920);
       }
 
-      .card:hover {
+      .card-modulos:hover {
         box-shadow: calc(6px * 1920 / 1920) calc(9px * 1920 / 1920) calc(60px * 1920 / 1920) calc(3px * 1920 / 1920) rgba(0, 0, 0, 0.21);
       }
 
-      .card h3 {
+      .card-modulos h3 {
         font-size: calc(1.25rem * 1920 / 1920);
       }
 
-      .card p {
+      .card-modulos p {
         font-size: calc(0.9375rem * 1920 / 1920);
       }
 
@@ -524,21 +635,21 @@
     }
 
     @media screen and (max-width: 1600px) {
-      .card {
+      .card-modulos {
         width: 60%;
         gap: calc(1rem * 1600 / 1920);
         padding: calc(1rem * 1600 / 1920);
       }
 
-      .card:hover {
+      .card-modulos:hover {
         box-shadow: calc(6px * 1600 / 1920) calc(9px * 1600 / 1920) calc(60px * 1600 / 1920) calc(3px * 1600 / 1920) rgba(0, 0, 0, 0.21);
       }
 
-      .card h3 {
+      .card-modulos h3 {
         font-size: calc(1.25rem * 1600 / 1920);
       }
 
-      .card p {
+      .card-modulos p {
         font-size: calc(0.9375rem * 1600 / 1920);
       }
 
@@ -584,21 +695,21 @@
     }
 
     @media screen and (max-width: 1440px) {
-      .card {
+      .card-modulos {
         width: 60%;
         gap: calc(1rem * 1440 / 1920);
         padding: calc(1rem * 1440 / 1920);
       }
 
-      .card:hover {
+      .card-modulos:hover {
         box-shadow: calc(6px * 1440 / 1920) calc(9px * 1440 / 1920) calc(60px * 1440 / 1920) calc(3px * 1440 / 1920) rgba(0, 0, 0, 0.21);
       }
 
-      .card h3 {
+      .card-modulos h3 {
         font-size: calc(1.25rem * 1440 / 1920);
       }
 
-      .card p {
+      .card-modulos p {
         font-size: calc(0.9375rem * 1440 / 1920);
       }
 
@@ -644,21 +755,21 @@
     }
 
     @media screen and (max-width: 1366px) {
-      .card {
+      .card-modulos {
         width: 60%;
         gap: calc(1rem * 1366 / 1920);
         padding: calc(1rem * 1366 / 1920);
       }
 
-      .card:hover {
+      .card-modulos:hover {
         box-shadow: calc(6px * 1366 / 1920) calc(9px * 1366 / 1920) calc(60px * 1366 / 1920) calc(3px * 1366 / 1920) rgba(0, 0, 0, 0.21);
       }
 
-      .card h3 {
+      .card-modulos h3 {
         font-size: calc(1.25rem * 1366 / 1920);
       }
 
-      .card p {
+      .card-modulos p {
         font-size: calc(0.9375rem * 1366 / 1920);
       }
 
@@ -704,21 +815,21 @@
     }
 
     @media screen and (max-width: 1280px) {
-      .card {
+      .card-modulos {
         width: 60%;
         gap: calc(1rem * 1280 / 1920);
         padding: calc(1rem * 1280 / 1920);
       }
 
-      .card:hover {
+      .card-modulos:hover {
         box-shadow: calc(6px * 1280 / 1920) calc(9px * 1280 / 1920) calc(60px * 1280 / 1920) calc(3px * 1280 / 1920) rgba(0, 0, 0, 0.21);
       }
 
-      .card h3 {
+      .card-modulos h3 {
         font-size: calc(1.25rem * 1280 / 1920);
       }
 
-      .card p {
+      .card-modulos p {
         font-size: calc(0.9375rem * 1280 / 1920);
       }
 
@@ -764,21 +875,21 @@
     }
 
     @media screen and (max-width: 1024px) {
-      .card {
+      .card-modulos {
         width: 60%;
         gap: calc(1rem * 1024 / 1920);
         padding: calc(1rem * 1024 / 1920);
       }
 
-      .card:hover {
+      .card-modulos:hover {
         box-shadow: calc(6px * 1024 / 1920) calc(9px * 1024 / 1920) calc(60px * 1024 / 1920) calc(3px * 1024 / 1920) rgba(0, 0, 0, 0.21);
       }
 
-      .card h3 {
+      .card-modulos h3 {
         font-size: calc(1.25rem * 1024 / 1920);
       }
 
-      .card p {
+      .card-modulos p {
         font-size: calc(0.9375rem * 1024 / 1920);
       }
 
@@ -820,6 +931,125 @@
       .caixa img {
         width: calc(2.25rem * 1024 / 1920);
         height: calc(2.125rem * 1024 / 1920);
+      }
+    }
+
+    @media screen and (max-width: 820px) {
+      main {
+        background-color: white;
+        height: 100%;
+      }
+
+      .container-modulos {
+        height: 55vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .container-modulos-data {
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+      }
+
+      .container-modulos-data h1 {
+        font-size: 2rem;
+        font-family: Be Vietnam Pro, sans-serif;
+        color: #4f4f50;
+        text-align: center;
+      }
+
+      .carousel-inner {
+        background-color: var(--cinza-secundario);
+        border-radius: 10px;
+        padding: 2rem;
+      }
+
+      .card-modulos {
+        margin: 0 auto;
+      }
+
+      .card-modulos h3 {
+        font-size: 1.5rem;
+      }
+
+      .card-modulos p {
+        font-size: 1rem;
+        color: white;
+      }
+
+      .modulos {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        width: 80%;
+        margin: 0 auto;
+      }
+
+      .whatsapp {
+        display: none;
+      }
+    }
+    @media screen and (max-width: 520px) {
+      main {
+        background-color: white;
+        height: 100%;
+      }
+
+      .container-modulos {
+        height: 55vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .container-modulos-data {
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+      }
+
+      .container-modulos-data h1 {
+        font-size: 1.5rem;
+        font-family: Be Vietnam Pro, sans-serif;
+        color: #4f4f50;
+        text-align: center;
+      }
+
+      .carousel-inner {
+        background-color: var(--cinza-secundario);
+        border-radius: 10px;
+        padding: 2rem;
+      }
+
+      .card-modulos {
+        margin: 0 auto;
+      }
+
+      .card-modulos h3 {
+        font-size: 1.3rem;
+      }
+
+      .card-modulos p {
+        font-size: .7rem;
+        color: white;
+      }
+
+      .modulos {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        width: 80%;
+        margin: 0 auto;
+      }
+
+      .whatsapp {
+        display: none;
       }
     }
   </style>

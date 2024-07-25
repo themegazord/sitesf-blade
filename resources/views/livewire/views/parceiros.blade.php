@@ -671,6 +671,10 @@
         justify-content: center;
       }
 
+      .container-parceiros-right::after {
+        display: none;
+      }
+
       .container-parceiros-right>img {
         position: static;
         margin: 2rem 0;

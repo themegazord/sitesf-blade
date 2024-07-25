@@ -30,7 +30,7 @@
         </p>
       </div>
       <div class="container-quemsomos-right">
-        <img src="{{ asset('imagens/QuemSomosImgRight.png') }}" alt=""/>
+        <img src="{{ asset('imagens/QuemSomosImgRight.png') }}" alt="" />
         <button wire:click="envio">Clique aqui e fale com nosso time</button>
       </div>
     </div>
@@ -69,7 +69,7 @@
       </p>
     </div>
   </main>
-  <livewire:componentes.footer.footer/>
+  <livewire:componentes.footer.footer />
   <script></script>
   <style>
     main {
@@ -114,6 +114,18 @@
       text-align: justify;
     }
 
+    .container-quemsomos-right::after {
+      content: '';
+      height: 700px;
+      width: 700px;
+      position: absolute;
+      z-index: 0;
+      left: 1350px;
+      top: 120px;
+      border-radius: 100%;
+      background-color: rgba(237, 237, 237, 0.23);
+    }
+
     .container-quemsomos-right {
       display: flex;
       justify-content: center;
@@ -126,6 +138,9 @@
     }
 
     .container-quemsomos-right button {
+      border: none;
+      border-radius: 10px;
+      transition: .5s ease;
       font-family: Be Vietnam Pro, sans-serif;
       position: absolute;
       right: 175px;
@@ -134,6 +149,11 @@
       background-color: var(--azul-principal);
       color: white;
       text-decoration: underline;
+    }
+
+    .container-quemsomos-right button:hover {
+      cursor: pointer;
+      background-color: #3593be;
     }
 
     @media screen and (max-width: 2560px) {
@@ -152,6 +172,18 @@
       .container-quemsomos-left {
         padding: calc(10rem * 2560 / 1920);
         gap: calc(3rem * 2560 / 1920);
+      }
+
+      .container-quemsomos-right::after {
+        content: '';
+        height: calc(700px * 2560 / 1920);
+        width: calc(700px * 2560 / 1920);
+        position: absolute;
+        z-index: 0;
+        left: calc(1350px * 2560 / 1920);
+        top: calc(120px * 2560 / 1920);
+        border-radius: 100%;
+        background-color: rgba(237, 237, 237, 0.23);
       }
 
       .container-quemsomos-left h3 {
@@ -189,6 +221,18 @@
         gap: calc(3rem * 1920 / 1920);
       }
 
+      .container-quemsomos-right::after {
+        content: '';
+        height: calc(700px * 1920 / 1920);
+        width: calc(700px * 1920 / 1920);
+        position: absolute;
+        z-index: 0;
+        left: calc(1350px * 1920 / 1920);
+        top: calc(120px * 1920 / 1920);
+        border-radius: 100%;
+        background-color: rgba(237, 237, 237, 0.23);
+      }
+
       .container-quemsomos-left h3 {
         font-size: calc(2.375rem * 1920 / 1920);
       }
@@ -222,6 +266,18 @@
       .container-quemsomos-left {
         padding: calc(10rem * 1600 / 1920);
         gap: calc(3rem * 1600 / 1920);
+      }
+
+      .container-quemsomos-right::after {
+        content: '';
+        height: calc(700px * 1600 / 1920);
+        width: calc(700px * 1600 / 1920);
+        position: absolute;
+        z-index: 0;
+        left: calc(1350px * 1600 / 1920);
+        top: calc(120px * 1600 / 1920);
+        border-radius: 100%;
+        background-color: rgba(237, 237, 237, 0.23);
       }
 
       .container-quemsomos-left h3 {
@@ -259,6 +315,18 @@
         gap: calc(3rem * 1440 / 1920);
       }
 
+      .container-quemsomos-right::after {
+        content: '';
+        height: calc(700px * 1440 / 1920);
+        width: calc(700px * 1440 / 1920);
+        position: absolute;
+        z-index: 0;
+        left: calc(1350px * 1440 / 1920);
+        top: calc(120px * 1440 / 1920);
+        border-radius: 100%;
+        background-color: rgba(237, 237, 237, 0.23);
+      }
+
       .container-quemsomos-left h3 {
         font-size: calc(2.375rem * 1440 / 1920);
       }
@@ -294,6 +362,18 @@
         gap: calc(3rem * 1366 / 1920);
       }
 
+      .container-quemsomos-right::after {
+        content: '';
+        height: calc(700px * 1366 / 1920);
+        width: calc(700px * 1366 / 1920);
+        position: absolute;
+        z-index: 0;
+        left: calc(1350px * 1366 / 1920);
+        top: calc(120px * 1366 / 1920);
+        border-radius: 100%;
+        background-color: rgba(237, 237, 237, 0.23);
+      }
+
       .container-quemsomos-left h3 {
         font-size: calc(2.375rem * 1366 / 1920);
       }
@@ -327,6 +407,18 @@
       .container-quemsomos-left {
         padding: calc(10rem * 1280 / 1920);
         gap: calc(3rem * 1280 / 1920);
+      }
+
+      .container-quemsomos-right::after {
+        content: '';
+        height: calc(700px * 1280 / 1920);
+        width: calc(700px * 1280 / 1920);
+        position: absolute;
+        z-index: 0;
+        left: calc(1350px * 1280 / 1920);
+        top: calc(120px * 1280 / 1920);
+        border-radius: 100%;
+        background-color: rgba(237, 237, 237, 0.23);
       }
 
       .container-quemsomos-left h3 {
@@ -366,6 +458,18 @@
 
       .container-quemsomos-left h3 {
         font-size: calc(2.375rem * 1024 / 1920);
+      }
+
+      .container-quemsomos-right::after {
+        content: '';
+        height: calc(700px * 1024 / 1920);
+        width: calc(700px * 1024 / 1920);
+        position: absolute;
+        z-index: 0;
+        left: calc(1350px * 1024 / 1920);
+        top: calc(120px * 1024 / 1920);
+        border-radius: 100%;
+        background-color: rgba(237, 237, 237, 0.23);
       }
 
       .container-quemsomos-left p {
@@ -473,6 +577,7 @@
         text-decoration: underline;
       }
     }
+
     @media screen and (max-width: 700px) {
       .container-quemsomos-mobile-imagem::after {
         height: calc(600px * 700 / 820);
@@ -483,6 +588,7 @@
         margin: calc(3rem * 700 / 820) 0;
       }
     }
+
     @media screen and (max-width: 600px) {
       .container-quemsomos-mobile-imagem::after {
         content: '';
@@ -499,6 +605,7 @@
         margin: calc(3rem * 600 / 820) 0;
       }
     }
+
     @media screen and (max-width: 500px) {
       .container-quemsomos-mobile-imagem::after {
         content: '';
@@ -515,6 +622,7 @@
         margin: calc(3rem * 500 / 820) 0;
       }
     }
+
     @media screen and (max-width: 400px) {
       .container-quemsomos-mobile-imagem::after {
         content: '';
@@ -526,10 +634,12 @@
         border-radius: 100%;
         background-color: rgba(237, 237, 237, 0.23);
       }
+
       .container-quemsomos-mobile-imagem {
         margin: calc(3rem * 400 / 820) 0;
       }
     }
+
     @media screen and (max-width: 300px) {
       .container-quemsomos-mobile-imagem::after {
         content: '';

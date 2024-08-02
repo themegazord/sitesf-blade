@@ -672,10 +672,12 @@
 
       .container-sersol-mobile-imagem {
         z-index: 1;
-
+        margin-bottom: 20rem;
       }
 
       .container-sersol-mobile-imagem>img {
+        position: absolute;
+        right: 5%;
         z-index: 1;
         width: 70%;
         margin-bottom: 3rem;
@@ -683,10 +685,10 @@
 
       .container-sersol-mobile-imagem::after {
         content: '';
-        height: 250px;
-        width: 70%;
+        height: 450px;
+        width: 450px;
         position: absolute;
-        left: 20%;
+        right: 5%;
         z-index: -1;
         border-radius: 100%;
         background-color: #1090CB;
@@ -721,6 +723,8 @@
         text-decoration: none;
       }
     }
+
+
 
     @media screen and (max-width: 700px) {
       #main-sersol-desktop {
@@ -770,21 +774,21 @@
         margin: 0 auto;
       }
 
-      .container-sersol-mobile-imagem {
 
-      }
 
       .container-sersol-mobile-imagem>img {
+        position: absolute;
+        right: 5%;
         z-index: 1;
         width: 70%;
       }
 
       .container-sersol-mobile-imagem::after {
         content: '';
-        height: 250px;
-        width: 70%;
+        height: calc(450px * 700 / 820);
+        width: calc(450px * 700 / 820);
         position: absolute;
-        left: 20%;
+        right: 5%;
         z-index: -1;
         border-radius: 100%;
         background-color: #1090CB;
@@ -817,6 +821,19 @@
       .lista-servicos-mobile a {
         width: 100%;
         text-decoration: none;
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      .container-sersol-mobile-imagem::after {
+        content: '';
+        height: calc(450px * 600 / 820);
+        width: calc(450px * 600 / 820);
+        position: absolute;
+        right: 5%;
+        z-index: -1;
+        border-radius: 100%;
+        background-color: #1090CB;
       }
     }
 
@@ -868,21 +885,19 @@
         margin: 0 auto;
       }
 
-      .container-sersol-mobile-imagem {
-
-      }
-
       .container-sersol-mobile-imagem>img {
         z-index: 1;
-        width: 90%;
+        position: absolute;
+        right: 5%;
+        width: 70%;
       }
 
       .container-sersol-mobile-imagem::after {
         content: '';
-        height: 250px;
-        width: 70%;
+        height: calc(450px * 500 / 820);
+        width: calc(450px * 500 / 820);
         position: absolute;
-        left: 20%;
+        right: 5%;
         z-index: -1;
         border-radius: 100%;
         background-color: #1090CB;
@@ -915,6 +930,19 @@
       .lista-servicos-mobile a {
         width: 100%;
         text-decoration: none;
+      }
+    }
+
+    @media screen and (max-width: 400px) {
+      .container-sersol-mobile-imagem::after {
+        content: '';
+        height: calc(450px * 400 / 820);
+        width: calc(450px * 400 / 820);
+        position: absolute;
+        right: 5%;
+        z-index: -1;
+        border-radius: 100%;
+        background-color: #1090CB;
       }
     }
 
@@ -966,21 +994,19 @@
         margin: 0 auto;
       }
 
-      .container-sersol-mobile-imagem {
-
-      }
-
       .container-sersol-mobile-imagem>img {
         z-index: 1;
-        width: 100%;
+        position: absolute;
+        right: 5%;
+        width: 75%;
       }
 
       .container-sersol-mobile-imagem::after {
         content: '';
-        height: 250px;
-        width: 70%;
+        height: calc(450px * 350 / 820);
+        width: calc(450px * 350 / 820);
         position: absolute;
-        left: 30%;
+        right: 5%;
         z-index: -1;
         border-radius: 100%;
         background-color: #1090CB;
@@ -1064,21 +1090,21 @@
         margin: 0 auto;
       }
 
-      .container-sersol-mobile-imagem {
 
-      }
 
       .container-sersol-mobile-imagem>img {
         z-index: 1;
-        width: 100%;
+        position: absolute;
+        right: 5%;
+        width: 75%;
       }
 
       .container-sersol-mobile-imagem::after {
         content: '';
-        height: 250px;
-        width: 70%;
+        height: calc(450px * 300 / 820);
+        width: calc(450px * 300 / 820);
         position: absolute;
-        left: 30%;
+        right: 5%;
         z-index: -1;
         border-radius: 100%;
         background-color: #1090CB;

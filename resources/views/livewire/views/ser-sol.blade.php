@@ -672,19 +672,18 @@
 
       .container-sersol-mobile-imagem {
         z-index: 1;
-        position: absolute;
-        left: 40%;
-        top: 60%;
+
       }
 
       .container-sersol-mobile-imagem>img {
         z-index: 1;
         width: 70%;
+        margin-bottom: 3rem;
       }
 
       .container-sersol-mobile-imagem::after {
         content: '';
-        height: 100%;
+        height: 250px;
         width: 70%;
         position: absolute;
         left: 20%;
@@ -772,10 +771,7 @@
       }
 
       .container-sersol-mobile-imagem {
-        z-index: 1;
-        position: absolute;
-        left: 40%;
-        top: 70%;
+
       }
 
       .container-sersol-mobile-imagem>img {
@@ -785,7 +781,7 @@
 
       .container-sersol-mobile-imagem::after {
         content: '';
-        height: 100%;
+        height: 250px;
         width: 70%;
         position: absolute;
         left: 20%;
@@ -873,10 +869,7 @@
       }
 
       .container-sersol-mobile-imagem {
-        z-index: 1;
-        position: absolute;
-        left: 40%;
-        top: 70%;
+
       }
 
       .container-sersol-mobile-imagem>img {
@@ -886,7 +879,7 @@
 
       .container-sersol-mobile-imagem::after {
         content: '';
-        height: 90%;
+        height: 250px;
         width: 70%;
         position: absolute;
         left: 20%;
@@ -974,10 +967,7 @@
       }
 
       .container-sersol-mobile-imagem {
-        z-index: 1;
-        position: absolute;
-        left: 20%;
-        top: 90%;
+
       }
 
       .container-sersol-mobile-imagem>img {
@@ -987,7 +977,7 @@
 
       .container-sersol-mobile-imagem::after {
         content: '';
-        height: 90%;
+        height: 250px;
         width: 70%;
         position: absolute;
         left: 30%;
@@ -1075,10 +1065,7 @@
       }
 
       .container-sersol-mobile-imagem {
-        z-index: 1;
-        position: absolute;
-        left: 20%;
-        top: 70%;
+
       }
 
       .container-sersol-mobile-imagem>img {
@@ -1088,7 +1075,7 @@
 
       .container-sersol-mobile-imagem::after {
         content: '';
-        height: 90%;
+        height: 250px;
         width: 70%;
         position: absolute;
         left: 30%;

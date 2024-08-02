@@ -763,6 +763,9 @@
       .container-home {
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
+        gap: 1rem;
+        height: 100%;
       }
 
       .container-home-top {
@@ -772,6 +775,12 @@
         display: flex;
         flex-direction: column;
         gap: calc(1rem * 820 / 820);
+      }
+
+      .container-home-down {
+        background-color: #1E1E1E;
+        display: flex;
+        flex-direction: row-reverse;
       }
 
       .container-home-top h1 {
@@ -819,7 +828,7 @@
       }
 
       .homem-home {
-        position: absolute;
+
         height: 400px;
         bottom: 0;
         right: 0;
@@ -877,7 +886,7 @@
       }
 
       .homem-home {
-        position: absolute;
+
         height: calc(400px * 600 / 820);
         bottom: 0;
         right: 0;
@@ -936,7 +945,7 @@
       }
 
       .homem-home {
-        position: absolute;
+
         height: 280px;
         bottom: 0;
         right: 0;
@@ -945,7 +954,7 @@
 
     @media screen and (max-width: 360px) {
       .homem-home {
-        position: absolute;
+
         height: 230px;
         bottom: 0;
         right: 0;

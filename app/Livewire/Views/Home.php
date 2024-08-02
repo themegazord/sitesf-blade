@@ -26,4 +26,8 @@ class Home extends Component
   public function setMobile(): void {
     $this->isMobile = !$this->isMobile;
   }
+
+  public function goSolucoes(): void {
+    to_route('solucoes');
+  }
 }

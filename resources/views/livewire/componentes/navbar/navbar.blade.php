@@ -15,7 +15,7 @@
       <button onclick="envio()">Fale Conosco</button>
     </div>
   </nav>
-  <nav class="mobile">
+  <nav class="mobile" style="background-color: {{ $navbarPreta ? '#1a1a1a' : 'white' }}">
     <div class="topo">
       @if ($isRotaAlternativa)
         <img alt="" class="logo" src="{{ asset('imagens/LogoAzul.png') }}" />

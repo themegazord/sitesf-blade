@@ -48,95 +48,59 @@
           </div>
         </div>
         <div class="modulos" id="modulosMobile">
-          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active" data-bs-interval="3000">
-                <div class="card-modulos">
-                  <div class="cadastro">
-                    <img src="{{ asset('imagens/Modulos/CadastroImagem.png') }}" alt="" />
-                  </div>
-                  <h3>Cadastro</h3>
-                  <p>
-                    Módulo de inserção de dados básicos no ERP, como empresas, clientes, fornecedores,
-                    produtos, centros de custos entre outras informações utilizadas nos demais módulos.
-                  </p>
-                </div>
-              </div>
-              <div class="carousel-item" data-bs-interval="3000">
-                <div class="card-modulos">
-                  <div class="financeiro">
-                    <img src="{{ asset('imagens/Modulos/FinanceiroImagem.png') }}" alt="" />
-                  </div>
-                  <h3>Financeiro</h3>
-                  <p>
-                    Contas a pagar, contas a receber, conciliação bancária, cobrança eletrônica, controle
-                    de cheques e recibos, descontos de títulos entre outros processos da área financeira.
-                  </p>
-                </div>
-              </div>
-              <div class="carousel-item" data-bs-interval="3000">
-                <div class="card-modulos">
-                  <div class="estoque">
-                    <img src="{{ asset('imagens/Modulos/EstoqueImagem.png') }}" alt="" />
-                  </div>
-                  <h3>Estoque</h3>
-                  <p>
-                    Gerencie seu estoque com eficiência e precisão. Nosso módulo de controle de estoque
-                    oferece uma solução completa para otimizar a logística da sua empresa, desde a
-                    organização dos produtos até a análise de dados.
-                  </p>
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  <i class="fa-solid fa-pen-to-square"></i>
+                  Módulo de Cadastros
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Este módulo de Cadastro centraliza a inserção e gestão de informações essenciais para o funcionamento do sistema. Cadastre empresas, clientes, fornecedores, produtos, centros de custos e outros dados cruciais. Com ele, você garante a organização e a precisão das informações que alimentam todos os outros módulos do seu ERP.
                 </div>
               </div>
             </div>
-            <div class="carousel-item" data-bs-interval="3000">
-              <div class="card-modulos">
-                <div class="estoque">
-                  <img src="{{ asset('imagens/Modulos/EstoqueImagem.png') }}" alt="" />
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <i class="fa-solid fa-cube"></i>
+                Módulo de Estoque
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                Gerencie cada item por local, realize inventários precisos, faça ajustes e transferências com facilidade, emita etiquetas para seus produtos e acompanhe cada movimento com a rastreabilidade completa. Defina pontos de reposição para nunca ficar sem seus produtos mais importantes. Nossas telas práticas e funcionais permitem analisar rapidamente a movimentação do estoque, além de acessar dados fiscais e cadastrais de cada produto.
                 </div>
-                <h3>Estoque</h3>
-                <p>
-                  Gerencie seu estoque com eficiência e precisão. Nosso módulo de controle de estoque
-                  oferece uma solução completa para otimizar a logística da sua empresa, desde a
-                  organização dos produtos até a análise de dados.
-                </p>
               </div>
             </div>
-            <div class="carousel-item" data-bs-interval="3000">
-              <div class="card-modulos">
-                <div class="estoque">
-                  <img src="{{ asset('imagens/Modulos/EstoqueImagem.png') }}" alt="" />
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <i class="fa-solid fa-coins"></i>
+                Módulo do Financeiro
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                Gerencie contas a pagar e a receber, realize conciliação bancária sem esforço, automatize sua cobrança com recursos eletrônicos, controle cheques e recibos com precisão e aplique descontos em títulos. Simplifique seus processos financeiros e tenha uma visão clara da saúde financeira do seu negócio.
                 </div>
-                <h3>Estoque</h3>
-                <p>
-                  Gerencie seu estoque com eficiência e precisão. Nosso módulo de controle de estoque
-                  oferece uma solução completa para otimizar a logística da sua empresa, desde a
-                  organização dos produtos até a análise de dados.
-                </p>
               </div>
             </div>
-            <div class="carousel-item" data-bs-interval="3000">
-              <div class="card-modulos">
-                <div class="caixa">
-                  <img src="{{ asset('imagens/Modulos/CaixaImagem.png') }}" alt="" />
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFourth">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFourth" aria-expanded="false" aria-controls="collapseFourth">
+                <i class="fa-solid fa-cash-register"></i>
+                Módulo do Caixa
+                </button>
+              </h2>
+              <div id="collapseFourth" class="accordion-collapse collapse" aria-labelledby="headingFourth" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                Registre pré-vendas e vendas diretas no caixa, realize todas as operações essenciais do dia a dia, como abertura, sangria, controle de suprimentos e fechamento. Emita cupons fiscais e NFC-e de forma automática e receba pagamentos com diversos tipos de títulos. Tenha total controle sobre seu caixa e garanta o cumprimento das obrigações fiscais com facilidade.
                 </div>
-                <h3>Caixa</h3>
-                <p>
-                  Permite o recebimento de pré-vendas, vendas direto no caixa, operações inerentes a
-                  caixa (abertura, sangria, suprimentos, fechamento) procedimentos fiscais (NF-e e
-                  NFC-e), recebimento de títulos entre outros.
-                </p>
               </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-              data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-              data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
           </div>
         </div>
         <img src="{{ asset('imagens/Whatsapp.png') }}" alt="" class="whatsapp" onclick="envio()" />
@@ -944,12 +908,12 @@
 
     @media screen and (max-width: 820px) {
       main {
-        background-color: white;
+        background-color: #1a1a1a;
         height: 100%;
       }
 
       .container-modulos {
-        height: 55vh;
+        height: 94vh;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -958,43 +922,60 @@
       .container-modulos-data {
         width: 100%;
         height: 100%;
-        background-color: white;
+        background-color: #1a1a1a;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: space-evenly;
       }
 
       .container-modulos-data h1 {
         font-size: 2rem;
         font-family: Be Vietnam Pro, sans-serif;
-        color: #4f4f50;
+        color: #EDEDED;
         text-align: center;
       }
 
-      .carousel-inner {
-        background-color: var(--cinza-secundario);
+      .accordion {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      .accordion-item:not(:first-of-type) {
+        border: none;
+      }
+
+      .accordion-body {
+        font-family: DM Sans, sans-serif;
+        color: #515151;
+      }
+
+      .accordion-button.collapsed {
         border-radius: 10px;
-        padding: 2rem;
       }
 
-      .card-modulos {
-        margin: 0 auto;
+      .accordion-item:first-of-type .accordion-button {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
       }
 
-      .card-modulos h3 {
-        font-size: 1.5rem;
+      .accordion-item:last-of-type .accordion-button.collapsed {
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
       }
 
-      .card-modulos p {
-        font-size: 1rem;
-        color: white;
+      .accordion-item {
+        border: none;
       }
 
-      .modulos {
-        display: grid;
-        grid-template-columns: 25% 25% 25% 25%;
-        width: 80%;
-        margin: 0 auto;
+
+      .accordion-header i {
+        margin-right: 2rem;
+      }
+
+      .accordion-header > button {
+        font-family: 'DM Sans', sans-serif;
+        font-weight: 700;
       }
 
       .whatsapp {
@@ -1004,12 +985,12 @@
 
     @media screen and (max-width: 520px) {
       main {
-        background-color: white;
+        background-color: #1a1a1a;
         height: 100%;
       }
 
       .container-modulos {
-        height: 55vh;
+        height: 94vh;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1018,47 +999,17 @@
       .container-modulos-data {
         width: 100%;
         height: 100%;
-        background-color: white;
+        background-color: #1a1a1a;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: space-evenly;
       }
 
       .container-modulos-data h1 {
         font-size: 1.5rem;
         font-family: Be Vietnam Pro, sans-serif;
-        color: #4f4f50;
+        color: #EDEDED;
         text-align: center;
-      }
-
-      .carousel-inner {
-        background-color: var(--cinza-secundario);
-        border-radius: 10px;
-        padding: 2rem;
-      }
-
-      .card-modulos {
-        margin: 0 auto;
-      }
-
-      .card-modulos h3 {
-        font-size: 1.3rem;
-      }
-
-      .card-modulos p {
-        font-size: .7rem;
-        color: white;
-      }
-
-      .modulos {
-        display: grid;
-        grid-template-columns: 25% 25% 25% 25%;
-        width: 80%;
-        margin: 0 auto;
-      }
-
-      .whatsapp {
-        display: none;
       }
     }
   </style>

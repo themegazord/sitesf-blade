@@ -10,11 +10,12 @@ use Symfony\Component\HttpFoundation\StreamedResponse;
 class Navbar extends Component
 {
   use RotaAtual;
-  public bool $isRotaAlternativa = false;
+  public bool $isRotaAlternativa, $navbarPreta = false;
   public string $isRotaAtiva = '';
 
   public function mount(): void {
     $this->isRotaAlternativa = $this->isRotaAlternativa();
+    $this->navbarPreta = $this->navbarPreta();
     $this->isRotaAtiva = $this->isRotaAtiva();
   }
 

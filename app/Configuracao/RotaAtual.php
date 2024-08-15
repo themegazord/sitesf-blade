@@ -27,4 +27,14 @@ trait RotaAtual
   public function isRotaAtiva(): string {
     return Route::currentRouteName();
   }
+
+  public function navbarPreta(): bool {
+    $rotasNavbarAlternativo = [
+      'home',
+      'quemsomos',
+      'modulos'
+    ];
+
+    return in_array(Route::currentRouteName(), $rotasNavbarAlternativo);
+  }
 }

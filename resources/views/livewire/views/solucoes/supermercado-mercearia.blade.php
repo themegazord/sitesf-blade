@@ -725,7 +725,7 @@
 
       .container-solucoes-supermerc-left h3 {
         text-align: center;
-        font-size: 1.5rem;
+        font-size: 2rem;
         font-family: Be Vietnam Pro, sans-serif;
         color: #4f4f50;
       }
@@ -737,7 +737,7 @@
 
       .container-solucoes-supermerc-left p {
         margin: 0 auto;
-        font-size: 0.9375rem;
+        font-size: 1.5rem;
         font-family: Be Vietnam Pro, sans-serif;
         color: #4f4f50;
         text-align: justify;
@@ -746,7 +746,7 @@
       }
 
       .container-solucoes-supermerc-left button {
-        font-size: 1rem;
+        font-size: 1.5rem;
         border: none;
         border-radius: 10px;
         height: 3rem;
@@ -821,7 +821,7 @@
 
       .container-solucoes-supermerc-left p {
         margin: 0 auto;
-        font-size: 0.9375rem;
+        font-size: 1.25rem;
         font-family: Be Vietnam Pro, sans-serif;
         color: #4f4f50;
         text-align: justify;
@@ -830,7 +830,7 @@
       }
 
       .container-solucoes-supermerc-left button {
-        font-size: 1rem;
+        font-size: 1.25rem;
         border: none;
         border-radius: 10px;
         height: 3rem;
@@ -893,7 +893,7 @@
 
       .container-solucoes-supermerc-left h3 {
         text-align: center;
-        font-size: 1rem;
+        font-size: 1.25rem;
         font-family: Be Vietnam Pro, sans-serif;
         color: #4f4f50;
       }
@@ -905,7 +905,7 @@
 
       .container-solucoes-supermerc-left p {
         margin: 0 auto;
-        font-size: 0.7rem;
+        font-size: 1rem;
         font-family: Be Vietnam Pro, sans-serif;
         color: #4f4f50;
         text-align: justify;
@@ -914,11 +914,12 @@
       }
 
       .container-solucoes-supermerc-left button {
-        font-size: .7rem;
+        font-size: 1rem;
         border: none;
         border-radius: 10px;
         height: 1.5rem;
         width: 60%;
+        height: 38px;
         margin: 0 auto;
         background-color: #63c7f5;
         color: white;

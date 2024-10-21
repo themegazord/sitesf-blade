@@ -716,18 +716,18 @@
       }
 
       .container-solucoes-barres-left p {
-        font-size: 0.9375rem;
+        font-size: 1.5rem;
         font-family: Be Vietnam Pro, sans-serif;
         color: #4f4f50;
         text-align: justify;
         width: 70%;
-        line-height: 30px;
+        line-height: 40px;
       }
 
       .container-solucoes-barres-left button {
         border: none;
         border-radius: 10px;
-        font-size: 1rem;
+        font-size: 1.5rem;
         height: 2rem;
         margin-left: 0;
         width: 60%;
@@ -796,18 +796,18 @@
       }
 
       .container-solucoes-barres-left p {
-        font-size: 0.9375rem;
+        font-size: 1.25rem;
         font-family: Be Vietnam Pro, sans-serif;
         color: #4f4f50;
         text-align: justify;
         width: 70%;
-        line-height: 30px;
+        line-height: 40px;
       }
 
       .container-solucoes-barres-left button {
         border: none;
         border-radius: 10px;
-        font-size: 1rem;
+        font-size: 1.25rem;
         height: 2rem;
         width: 60%;
         margin-left: 0;
@@ -876,7 +876,7 @@
       }
 
       .container-solucoes-barres-left p {
-        font-size: 0.7rem;
+        font-size: 1rem;
         font-family: Be Vietnam Pro, sans-serif;
         color: #4f4f50;
         text-align: justify;
@@ -887,7 +887,7 @@
       .container-solucoes-barres-left button {
         border: none;
         border-radius: 10px;
-        font-size: .7rem;
+        font-size: 1rem;
         height: 2rem;
         width: 60%;
         margin-left: 0;
@@ -956,7 +956,7 @@
       }
 
       .container-solucoes-barres-left p {
-        font-size: 0.7rem;
+        font-size: 1rem;
         font-family: Be Vietnam Pro, sans-serif;
         color: #4f4f50;
         text-align: justify;
@@ -967,7 +967,7 @@
       .container-solucoes-barres-left button {
         border: none;
         border-radius: 10px;
-        font-size: .7rem;
+        font-size: 1rem;
         height: 2rem;
         width: 60%;
         margin-left: 0;

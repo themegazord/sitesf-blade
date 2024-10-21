@@ -716,7 +716,7 @@
       }
 
       .container-sersol-distconv-left h3 {
-        font-size: 1.5rem;
+        font-size: 2rem;
         font-family: Be Vietnam Pro, sans-serif;
         color: #4f4f50;
       }
@@ -727,7 +727,7 @@
       }
 
       .container-sersol-distconv-left p {
-        font-size: 0.9375rem;
+        font-size: 1.5rem;
         font-family: Be Vietnam Pro, sans-serif;
         color: #4f4f50;
         text-align: justify;
@@ -736,7 +736,7 @@
       }
 
       .container-sersol-distconv-left button {
-        font-size: 1rem;
+        font-size: 1.5rem;
         height: 3rem;
         border: none;
         transition: .5s ease;
@@ -796,7 +796,7 @@
       }
 
       .container-sersol-distconv-left h3 {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         font-family: Be Vietnam Pro, sans-serif;
         color: #4f4f50;
       }
@@ -807,7 +807,7 @@
       }
 
       .container-sersol-distconv-left p {
-        font-size: 0.7375rem;
+        font-size: 1rem;
         font-family: Be Vietnam Pro, sans-serif;
         color: #4f4f50;
         text-align: justify;
@@ -816,8 +816,8 @@
       }
 
       .container-sersol-distconv-left button {
-        font-size: .7rem;
-        height: 1.5rem;
+        font-size: 1rem;
+        height: 2rem;
         border: none;
         transition: .5s ease;
         border-radius: 10px;
@@ -855,84 +855,5 @@
       }
     }
 
-    @media screen and (max-width: 435px) {
-      main {
-        height: 100%;
-        background-color: #fff;
-      }
-
-      .container-sersol-distconv {
-        display: flex;
-        flex-direction: column;
-      }
-
-      .container-sersol-distconv-left {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 3rem;
-        margin-left: 0;
-        gap: 2rem;
-      }
-
-      .container-sersol-distconv-left h3 {
-        font-size: 1rem;
-        font-family: Be Vietnam Pro, sans-serif;
-        color: #4f4f50;
-      }
-
-      .container-sersol-distconv-left h3 b {
-        color: #2985b8;
-        text-decoration: underline;
-      }
-
-      .container-sersol-distconv-left p {
-        font-size: 0.7375rem;
-        font-family: Be Vietnam Pro, sans-serif;
-        color: #4f4f50;
-        text-align: justify;
-        width: 70%;
-        line-height: 20px;
-      }
-
-      .container-sersol-distconv-left button {
-        font-size: .7rem;
-        height: 1.5rem;
-        border: none;
-        transition: .5s ease;
-        border-radius: 10px;
-        width: 60%;
-        margin-left: 0;
-        background-color: #63c7f5;
-        color: white;
-      }
-
-      .container-sersol-distconv-left button:hover {
-        cursor: pointer;
-        background-color: #3186ad;
-      }
-
-      .container-sersol-distconv-right {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-      }
-
-      .container-sersol-distconv-right::after {
-        display: none;
-      }
-
-      .container-sersol-distconv-right img {
-        margin-bottom: 2rem;
-        position: sticky;
-        height: 200px;
-        z-index: 1;
-      }
-
-      .chips {
-        display: none;
-      }
-    }
   </style>
 </div>

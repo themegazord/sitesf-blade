@@ -718,7 +718,7 @@
       }
 
       .container-sersol-autoelec-left h3 {
-        font-size: 1.5rem;
+        font-size: 2rem;
         font-family: Be Vietnam Pro, sans-serif;
         color: #4f4f50;
       }
@@ -729,16 +729,16 @@
       }
 
       .container-sersol-autoelec-left p {
-        font-size: 0.9375rem;
+        font-size: 1.5rem;
         font-family: Be Vietnam Pro, sans-serif;
         color: #4f4f50;
         text-align: justify;
         width: 70%;
-        line-height: 20px;
+        line-height: 30px;
       }
 
       .container-sersol-autoelec-left button {
-        font-size: 0.9375rem;
+        font-size: 1.5rem;
         height: 2rem;
         margin-left: 0;
         border: none;
@@ -776,7 +776,7 @@
         display: none;
       }
     }
-    @media screen and (max-width: 510px) {
+    @media screen and (max-width: 550px) {
       main {
         height: 100%;
         background-color: #fff;
@@ -797,7 +797,7 @@
       }
 
       .container-sersol-autoelec-left h3 {
-        font-size: 1.5rem;
+        font-size: 2rem;
         font-family: Be Vietnam Pro, sans-serif;
         color: #4f4f50;
       }
@@ -808,7 +808,7 @@
       }
 
       .container-sersol-autoelec-left p {
-        font-size: 0.9375rem;
+        font-size: 1.5rem;
         font-family: Be Vietnam Pro, sans-serif;
         color: #4f4f50;
         text-align: justify;
@@ -817,12 +817,12 @@
       }
 
       .container-sersol-autoelec-left button {
-        font-size: 0.9375rem;
-        height: 2rem;
+        font-size: 1.25rem;
         margin-left: 0;
         border: none;
         border-radius: 10px;
         width: 60%;
+        height: 40px;
         background-color: #63c7f5;
         color: white;
         transition: .5s ease;
@@ -876,7 +876,7 @@
       }
 
       .container-sersol-autoelec-left h3 {
-        font-size: 1rem;
+        font-size: 1.25rem;
         font-family: Be Vietnam Pro, sans-serif;
         color: #4f4f50;
       }
@@ -887,7 +887,7 @@
       }
 
       .container-sersol-autoelec-left p {
-        font-size: 0.7rem;
+        font-size: 1rem;
         font-family: Be Vietnam Pro, sans-serif;
         color: #4f4f50;
         text-align: justify;
@@ -896,11 +896,11 @@
       }
 
       .container-sersol-autoelec-left button {
-        font-size: 0.7rem;
+        font-size: 1rem;
         margin-left: 0;
         border: none;
         border-radius: 10px;
-        height: 1.5rem;
+        height: 2rem;
         width: 60%;
         background-color: #63c7f5;
         color: white;

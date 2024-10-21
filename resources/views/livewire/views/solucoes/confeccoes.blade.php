@@ -748,7 +748,7 @@
       }
 
       .container-sersol-confeccoes-left h3 {
-        font-size: 1.5rem;
+        font-size: 2rem;
         font-family: Be Vietnam Pro, sans-serif;
         color: #4f4f50;
       }
@@ -759,7 +759,7 @@
       }
 
       .container-sersol-confeccoes-left p {
-        font-size: 0.9375rem;
+        font-size: 1.5rem;
         font-family: Be Vietnam Pro, sans-serif;
         color: #4f4f50;
         text-align: justify;
@@ -768,7 +768,7 @@
       }
 
       .container-sersol-confeccoes-left button {
-        font-size: 1rem;
+        font-size: 1.5rem;
         height: 3rem;
         border: none;
         border-radius: 10px;
@@ -838,7 +838,7 @@
       }
 
       .container-sersol-confeccoes-left p {
-        font-size: 0.9375rem;
+        font-size: 1.25rem;
         font-family: Be Vietnam Pro, sans-serif;
         color: #4f4f50;
         text-align: justify;
@@ -847,7 +847,7 @@
       }
 
       .container-sersol-confeccoes-left button {
-        font-size: 1rem;
+        font-size: 1.25rem;
         height: 3rem;
         border: none;
         border-radius: 10px;
@@ -917,7 +917,7 @@
       }
 
       .container-sersol-confeccoes-left p {
-        font-size: 0.9375rem;
+        font-size: 1.25rem;
         font-family: Be Vietnam Pro, sans-serif;
         color: #4f4f50;
         text-align: justify;
@@ -926,7 +926,7 @@
       }
 
       .container-sersol-confeccoes-left button {
-        font-size: 1rem;
+        font-size: 1.25rem;
         height: 3rem;
         border: none;
         border-radius: 10px;

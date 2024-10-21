@@ -795,7 +795,8 @@
       }
 
       .container-home-top h4 {
-        font-size: calc(0.8rem * 820 / 820);
+        line-height: 24px;
+        font-size: calc(1rem * 820 / 820);
 
         line-height: 16px;
         width: 75%;
@@ -812,7 +813,7 @@
 
       .botoes button {
         padding: .5rem 1rem;
-        font-size: calc(0.8rem * 820 / 820);
+        font-size: calc(1rem * 820 / 820);
         border-radius: 5px;
       }
 
@@ -866,7 +867,8 @@
       }
 
       .container-home-top h4 {
-        font-size: calc(0.8rem * 820 / 820);
+        line-height: 24px;
+        font-size: calc(1rem * 820 / 820);
 
         width: 65%;
         font-family: Be Vietnam Pro, sans-serif;
@@ -875,7 +877,7 @@
       }
 
       .botoes button {
-        font-size: calc(0.8rem * 820 / 820);
+        font-size: calc(1rem * 820 / 820);
         padding: calc(.5rem * 820 / 820) calc(1rem * 820 / 820);
       }
 
@@ -895,6 +897,7 @@
 
     @media screen and (max-width: 500px) {
       .container-home-top h4 {
+        line-height: 24px;
         width: 85%;
       }
     }
@@ -926,8 +929,8 @@
       }
 
       .container-home-top h4 {
-        font-size: 0.5;
-
+        line-height: 24px;
+        font-size: 1rem;
         width: 75%;
         font-family: Be Vietnam Pro, sans-serif;
         color: white;
@@ -954,14 +957,13 @@
 
     @media screen and (max-width: 360px) {
       .homem-home {
-
         height: 230px;
         bottom: 0;
         right: 0;
       }
 
       .container-home-top h1 {
-        font-size: 1rem;
+        font-size: 1.5rem;
         width: 90%;
         font-family: Be Vietnam Pro, sans-serif;
         font-weight: 700;
@@ -969,10 +971,10 @@
       }
 
       .container-home-top h4 {
-        font-size: 0.5;
-
+        font-size: 1rem;
         width: 95%;
         font-family: Be Vietnam Pro, sans-serif;
+        line-height: 24px;
         color: white;
         font-weight: 400;
       }

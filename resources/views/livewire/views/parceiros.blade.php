@@ -637,7 +637,7 @@
       .container-parceiros-left h3 {
         margin-top: 2rem;
         text-align: center;
-        font-size: 1.5rem;
+        font-size: 2rem;
         font-family: Be Vietnam Pro, sans-serif;
         color: #4f4f50;
       }
@@ -649,7 +649,7 @@
 
       .container-parceiros-left p {
         margin: 0 auto;
-        font-size: 0.9375rem;
+        font-size: 1.5rem;
         font-family: Be Vietnam Pro, sans-serif;
         color: #4f4f50;
         text-align: justify;
@@ -662,8 +662,8 @@
         border: none;
         border-radius: 10px;
         width: 40%;
-        height: 2rem;
-        font-size: 1rem;
+        height: 3rem;
+        font-size: 1.5rem;
         background-color: #63c7f5;
         color: white;
         transition: .5s ease;
@@ -735,7 +735,7 @@
       .container-parceiros-left h3 {
         margin-top: 2rem;
         text-align: center;
-        font-size: 1.5rem;
+        font-size: 2rem;
         font-family: Be Vietnam Pro, sans-serif;
         color: #4f4f50;
       }
@@ -747,7 +747,7 @@
 
       .container-parceiros-left p {
         margin: 0 auto;
-        font-size: 0.9375rem;
+        font-size: 1.5rem;
         font-family: Be Vietnam Pro, sans-serif;
         color: #4f4f50;
         text-align: justify;
@@ -760,8 +760,8 @@
         border: none;
         border-radius: 10px;
         width: 60%;
-        height: 2rem;
-        font-size: 1rem;
+        height: 3rem;
+        font-size: 1.5rem;
         background-color: #63c7f5;
         color: white;
         transition: .5s ease;
@@ -841,12 +841,12 @@
 
       .container-parceiros-left p {
         margin: 0 auto;
-        font-size: 0.7rem;
+        font-size: 1.25rem;
         font-family: Be Vietnam Pro, sans-serif;
         color: #4f4f50;
         text-align: justify;
         width: 70%;
-        line-height: 20px;
+        line-height: 30px;
       }
 
       .container-parceiros-left button {
@@ -854,8 +854,8 @@
         border: none;
         border-radius: 10px;
         width: 60%;
-        height: 2rem;
-        font-size: .7rem;
+        height: 2.5rem;
+        font-size: 1.25rem;
         background-color: #63c7f5;
         color: white;
         transition: .5s ease;
@@ -923,7 +923,7 @@
       .container-parceiros-left h3 {
         margin-top: 2rem;
         text-align: center;
-        font-size: 1.5rem;
+        font-size: 1.25rem;
         font-family: Be Vietnam Pro, sans-serif;
         color: #4f4f50;
       }
@@ -935,7 +935,7 @@
 
       .container-parceiros-left p {
         margin: 0 auto;
-        font-size: 0.7rem;
+        font-size: 1rem;
         font-family: Be Vietnam Pro, sans-serif;
         color: #4f4f50;
         text-align: justify;
@@ -949,7 +949,7 @@
         border-radius: 10px;
         width: 60%;
         height: 2rem;
-        font-size: .7rem;
+        font-size: 1rem;
         background-color: #63c7f5;
         color: white;
         transition: .5s ease;

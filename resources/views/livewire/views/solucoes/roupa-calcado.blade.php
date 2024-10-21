@@ -729,7 +729,7 @@
 
       .container-solucoes-roupacalcado-left h3 {
         text-align: center;
-        font-size: 1.5rem;
+        font-size: 2rem;
         font-family: Be Vietnam Pro, sans-serif;
         color: #4f4f50;
       }
@@ -740,7 +740,7 @@
       }
 
       .container-solucoes-roupacalcado-left p {
-        font-size: 0.9375rem;
+        font-size: 1.5rem;
         font-family: Be Vietnam Pro, sans-serif;
         color: #4f4f50;
         text-align: justify;
@@ -752,7 +752,7 @@
         border: none;
         border-radius: 10px;
         transition: .5s ease;
-        font-size: 1rem;
+        font-size: 1.5rem;
         height: 3rem;
         margin-left: 0;
         width: 60%;
@@ -810,7 +810,7 @@
 
       .container-solucoes-roupacalcado-left h3 {
         text-align: center;
-        font-size: 1.5rem;
+        font-size: 2rem;
         font-family: Be Vietnam Pro, sans-serif;
         color: #4f4f50;
       }
@@ -821,7 +821,7 @@
       }
 
       .container-solucoes-roupacalcado-left p {
-        font-size: 0.9375rem;
+        font-size: 1.5rem;
         font-family: Be Vietnam Pro, sans-serif;
         color: #4f4f50;
         text-align: justify;
@@ -833,7 +833,7 @@
         border: none;
         border-radius: 10px;
         transition: .5s ease;
-        font-size: 1rem;
+        font-size: 1.5rem;
         height: 3rem;
         margin-left: 0;
         width: 60%;
@@ -891,7 +891,7 @@
 
       .container-solucoes-roupacalcado-left h3 {
         text-align: center;
-        font-size: 1rem;
+        font-size: 1.5rem;
         font-family: Be Vietnam Pro, sans-serif;
         color: #4f4f50;
       }
@@ -902,7 +902,7 @@
       }
 
       .container-solucoes-roupacalcado-left p {
-        font-size: 0.7rem;
+        font-size:  1rem;
         font-family: Be Vietnam Pro, sans-serif;
         color: #4f4f50;
         text-align: justify;
@@ -914,7 +914,7 @@
         border: none;
         border-radius: 10px;
         transition: .5s ease;
-        font-size: .7rem;
+        font-size: 1rem;
         height: 2rem;
         margin-left: 0;
         width: 70%;

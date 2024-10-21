@@ -734,7 +734,7 @@
       }
 
       .container-sersol-eventos-left h3 {
-        font-size: 1.5rem;
+        font-size: 2rem;
         font-family: Be Vietnam Pro, sans-serif;
         color: #4f4f50;
       }
@@ -745,7 +745,7 @@
       }
 
       .container-sersol-eventos-left p {
-        font-size: 0.9375rem;
+        font-size: 1.5rem;
         font-family: Be Vietnam Pro, sans-serif;
         color: #4f4f50;
         text-align: justify;
@@ -758,7 +758,7 @@
         border-radius: 10px;
         transition: .5s ease;
         height: 3rem;
-        font-size: 1rem;
+        font-size: 1.5rem;
         width: 60%;
         margin-left: 0;
         background-color: #63c7f5;
@@ -793,7 +793,8 @@
       }
     }
 
-    @media screen and (max-width: 820px) {
+
+    @media screen and (max-width: 410px) {
       main {
         height: 100%;
         background-color: #fff;
@@ -814,7 +815,7 @@
       }
 
       .container-sersol-eventos-left h3 {
-        font-size: 1rem;
+        font-size: 1.5rem;
         font-family: Be Vietnam Pro, sans-serif;
         color: #4f4f50;
       }
@@ -825,7 +826,7 @@
       }
 
       .container-sersol-eventos-left p {
-        font-size: 0.7375rem;
+        font-size: 1.25rem;
         font-family: Be Vietnam Pro, sans-serif;
         color: #4f4f50;
         text-align: justify;
@@ -837,8 +838,8 @@
         border: none;
         border-radius: 10px;
         transition: .5s ease;
-        height: 1.5rem;
-        font-size: .7rem;
+        height: 2rem;
+        font-size: 1.25rem;
         width: 60%;
         margin-left: 0;
         background-color: #63c7f5;

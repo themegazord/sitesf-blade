@@ -103,6 +103,7 @@
     .container-home-left {
       display: flex;
       flex-direction: column;
+      justify-content: center;
 
       align-items: start;
       padding-left: 10rem;
@@ -155,6 +156,7 @@
       display: flex;
 
       align-items: center;
+      justify-content: center;
     }
 
     .container-home-right img {

@@ -11,7 +11,8 @@
       <a class="{{ $isRotaAtiva === 'quemsomos' ? 'linkativo' : '' }}" href="/quemsomos">Quem somos</a>
       <a class="{{ $isRotaAtiva === 'solucoes' ? 'linkativo' : '' }}" href="/solucoes">Serviços e Soluções</a>
       <a class="{{ $isRotaAtiva === 'parceiros' ? 'linkativo' : '' }}" href="/parceiros">Parceiros</a>
-      <button wire:click="download">Baixe nosso app</button>
+      <button wire:click="download('apk')">Baixe nosso app</button>
+      <button wire:click="download('api')">Baixe nossa api</button>
       <button onclick="envio()">Fale Conosco</button>
     </div>
   </nav>

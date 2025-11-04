@@ -47,7 +47,8 @@
         </li>
       </ul>
 
-      <button wire:click="download" class="download-button">Baixe nosso app</button>
+      <button wire:click="download('apk')" class="download-button">Baixe nosso app</button>
+      <button wire:click="download('api')">Baixe nossa api</button>
       <button class="contato-button" onclick="envio()">Fale Conosco</button>
     </div>
   </nav>

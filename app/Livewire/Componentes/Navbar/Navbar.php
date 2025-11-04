@@ -33,8 +33,6 @@ class Navbar extends Component
       // Obtém todos os arquivos no diretório /apk/atual/
       $files = Storage::disk('ftp')->files('/apk/atual/');
 
-
-
       // Verifica se há arquivos no diretório
       if (empty($files)) {
         abort(404, 'Nenhum arquivo encontrado no diretório /apk/atual/.');
@@ -43,10 +41,13 @@ class Navbar extends Component
       // Pega o primeiro arquivo da lista
       $file = $files[0];
 
+      // Extrai o nome original do arquivo
+      $fileName = basename($file);
+
       // Força o tipo MIME correto
       return response()->streamDownload(function () use ($file) {
         echo Storage::disk('ftp')->get($file);
-      }, 'safimobile.apk', [
+      }, $fileName, [
         'Content-Type' => 'application/vnd.android.package-archive'
       ]);
     }

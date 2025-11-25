@@ -9,11 +9,12 @@
   "license": "MIT",
   "require": {
     "php": "^8.2",
-    "laravel/framework": "^11.9",
+    "laravel/framework": "^12",
     "laravel/sanctum": "^4.0",
     "laravel/tinker": "^2.9",
     "league/flysystem-ftp": "3.0",
-    "livewire/livewire": "^3.5"
+    "livewire/livewire": "^3.7",
+    "robsontenorio/mary": "^2.4"
   },
   "require-dev": {
     "fakerphp/faker": "^1.23",
@@ -55,6 +56,10 @@
       "git pull origin main",
       "@php artisan optimize",
       "@php artisan optimize:clear"
+    ],
+    "dev-wsl": [
+      "Composer\\Config::disableProcessTimeout",
+      "npx concurrently -c \"#93c5fd,#c4b5fd,#fdba74,#e5a78d,#a3d8a1\" \"php artisan serve --host=0.0.0.0 --port=8000\" \"php artisan queue:listen --tries=1\" \"php artisan schedule:work\" \"npm run dev -- --host=0.0.0.0 --port=5173\" \"php artisan reverb:start\" --names=server,queue,schedule,vite,reverb"
     ]
   },
   "extra": {

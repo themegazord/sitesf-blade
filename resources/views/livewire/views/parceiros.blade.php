@@ -28,12 +28,13 @@
           negócio!
         </p>
 
-        <div class="pt-8">
+        <div class="pt-6">
           <x-button
             label="Clique Aqui E Fale Com Nosso Time"
-            class="bg-cyan-400 hover:bg-cyan-500 text-white font-semibold px-8 py-4 rounded-lg transition-all duration-300 transform hover:scale-105"
+            class="bg-cyan-400 hover:bg-cyan-500 text-gray-900 font-semibold px-8 py-4 rounded-lg transition-all duration-300 transform hover:scale-105"
             link="https://wa.me/5567999832455"
             external />
+
         </div>
       </div>
 

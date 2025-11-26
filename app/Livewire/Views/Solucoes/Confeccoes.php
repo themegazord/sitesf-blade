@@ -7,6 +7,14 @@ use Livewire\Component;
 
 class Confeccoes extends Component
 {
+  public $tags = [
+    'Confecções',
+    'Estamparias',
+    'Camiseterias',
+    'Uniformes',
+    'Costureiras',
+    'Ateliês'
+  ];
   #[Title("SF Sistemas - Soluções - Confecções")]
   public function render()
   {

@@ -8,10 +8,10 @@ use Livewire\Component;
 class FabricaPequenoPorte extends Component
 {
   public $tags = [
-        'Confecções',
-        'Lingeries',
-        'Roupas Infantis'
-    ];
+    'Confecções',
+    'Lingeries',
+    'Roupas Infantis'
+  ];
 
   #[Title("SF Sistemas - Soluções - Fabricas de Pequeno Porte")]
   public function render()

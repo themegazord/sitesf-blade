@@ -1,4 +1,4 @@
-<div class="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white py-20 px-6 lg:px-16 relative overflow-hidden">
+<div class="bg-linear-to-br from-gray-900 via-gray-800 to-gray-900 text-white py-20 px-6 lg:px-16 relative overflow-hidden">
     <!-- Círculo decorativo de fundo -->
     <div class="absolute top-0 right-0 w-[800px] h-[800px] bg-gray-700 rounded-full opacity-20 translate-x-1/3 -translate-y-1/4"></div>
 

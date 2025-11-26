@@ -1,4 +1,4 @@
-<div class="bg-linear-to-br from-gray-900 via-gray-800 to-gray-900 text-white py-20 px-6 lg:px-16 relative overflow-hidden">
+<div class="bg-linear-to-br from-gray-900 via-gray-800 to-gray-900 text-white min-h-screen py-20 px-6 lg:px-16 relative overflow-hidden">
     <!-- Círculo decorativo de fundo -->
     <div class="absolute bottom-0 left-0 w-[800px] h-[800px] bg-gray-700 rounded-full opacity-20 -translate-x-1/3 translate-y-1/4"></div>
 
@@ -14,7 +14,7 @@
         </div>
 
         <!-- Grid de Módulos -->
-        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
             @foreach($modulos as $modulo)
                 <div class="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-lg hover:bg-gray-800 hover:border-gray-600 transition-all duration-300 p-8 transform hover:-translate-y-2 hover:shadow-2xl">
                     <!-- Ícone -->

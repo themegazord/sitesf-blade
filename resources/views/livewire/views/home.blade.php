@@ -1,987 +1,174 @@
-<div>
-  <main id="home-main-desktop">
-    <div class="container-home">
-      <div class="container-home-left">
-        <h1>
-          Facilite o <span>processo de gestão</span> da sua empresa com nossa solução de alto padrão
-        </h1>
-        <h4>
-          A SF Sistemas é uma empresa com soluções sistêmicas para facilitar a gestão da sua empresa
-          de forma prática, fácil, com ótima relação custo benefício, aliando sempre a qualidade e
-          profissionalismo.
-        </h4>
-        <div class="botoes">
-          <button onclick="envio()">Fale Conosco</button>
-          <a href="/solucoes">
-            <button>Saiba Mais</button>
-          </a>
+<div class="min-h-screen bg-linear-to-b from-gray-900 to-gray-800 text-white">
+    <!-- Hero Section -->
+    <section class="relative pt-20 md:pt-32 pb-10 md:pb-20 px-6 overflow-hidden min-h-screen flex items-center">
+        <div class="max-w-7xl mx-auto w-full">
+            <div class="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+                <!-- Left Content -->
+                <div class="space-y-4 md:space-y-6 animate-slideInLeft order-2 md:order-1">
+                    <h1 class="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight">
+                        Facilite o <span class="text-cyan-400">processo de gestão</span> da sua empresa com nossa solução de alto padrão
+                    </h1>
+
+                    <p class="text-gray-300 text-base md:text-lg leading-relaxed">
+                        A SF Sistemas é uma empresa com soluções sistêmicas para facilitar a gestão da sua empresa de forma prática, fácil, com ótima relação custo benefício, aliando sempre a qualidade e profissionalismo.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row gap-3 md:gap-4 pt-2 md:pt-4">
+                        <button class="bg-cyan-400 text-white px-6 md:px-8 py-2.5 md:py-3 rounded-lg font-medium hover:bg-cyan-500 transition-all duration-300 transform hover:scale-105 text-sm md:text-base">
+                            Fale Conosco
+                        </button>
+                        <button class="bg-white text-gray-900 px-6 md:px-8 py-2.5 md:py-3 rounded-lg font-medium hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 text-sm md:text-base">
+                            Saiba Mais
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Right Illustration -->
+                <div class="relative animate-slideInRight order-1 md:order-2">
+                    <!-- Character sitting with laptop -->
+                    <img src="{{ asset('imagens/HomeImgRight.png') }}" />
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="container-home-right">
-        <img src="{{ asset('imagens/HomeImgRight.png') }}" alt="" />
-      </div>
-    </div>
-  </main>
-  <div class="footer" id="home-footer-desktop">
-    <livewire:componentes.gerais.whatsapp-icon />
-    <div class="subfooter">
-      <div class="subfooter-left">
-        <img src="{{ asset('imagens/LogoAzul.png') }}" alt="">
-        <p>Soluções sistêmicas de alto padrão para sua empresa!</p>
-      </div>
-      <div class="subfooter-right">
-        <div class="guias">
-          <p>Quem somos</p>
-          <a href="/parceiros">Clientes</a>
-          <a href="/solucoes">Portfólio</a>
-          <p>Politica e Privacidade</p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-950 border-t border-gray-800 py-12 px-6 mt-20">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div class="space-y-4">
+                    <div class="text-3xl font-bold text-cyan-400">SF</div>
+                    <p class="text-gray-400 text-sm">
+                        Soluções sistêmicas de alto padrão para sua empresa!
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-white font-semibold mb-4">Quem Somos</h3>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="/parceiros" class="hover:text-cyan-400 transition-colors">Clientes</a></li>
+                        <li><a href="/solucoes" class="hover:text-cyan-400 transition-colors">Portfólio</a></li>
+                        <li><a href="#" class="hover:text-cyan-400 transition-colors">Política e Privacidade</a></li>
+                    </ul>
+                </div>
+
+                <!-- Address -->
+                <div>
+                    <h3 class="text-white font-semibold mb-4">Nosso Endereço</h3>
+                    <address class="text-gray-400 text-sm not-italic space-y-1">
+                        <p>R. Mal Candido Mariano, 332</p>
+                        <p>1° Andar - Sala 2</p>
+                        <p>Campo Grande - MS</p>
+                        <p class="pt-2">(67) 9 9983-2455</p>
+                    </address>
+                </div>
+
+                <!-- Social Media -->
+                <div>
+                    <h3 class="text-white font-semibold mb-4">Redes Sociais</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-cyan-600 transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-cyan-600 transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-cyan-600 transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-500 text-sm">
+                <p>Copyright © 2024 Todos os direitos reservados</p>
+                <p class="mt-2">Criado por <span class="text-cyan-400">SF Sistemas</span></p>
+            </div>
         </div>
-        <div class="endereco">
-          <p>Endereço</p>
-          <span><b>R.Mal Candido Mariano, 332</b></span>
-          <span><b>1º Andar - Sala 2</b></span>
-          <span><b>Campo Grande - MS</b></span>
-          <span>(67) 9 9983-2455</span>
-        </div>
-        <div class="social">
-          <button><i class="fa-brands fa-facebook-f"></i></button>
-          <button><i class="fa-brands fa-instagram"></i></button>
-          <button><i class="fa-brands fa-linkedin"></i></button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <main class="{{ $isRotaAlternativa ? 'rotaalternativa' : ''}}" id="home-main-mobile">
-    <div class="container-home">
-      <div class="container-home-top">
-        <livewire:componentes.gerais.mobile.cacto-home />
-        <livewire:componentes.gerais.mobile.tijolo-home />
-        <h1>
-          Facilite o <span>processo de gestão</span> da sua empresa com nossa solução de alto
-          padrão
-        </h1>
-        <p id="testealtura"></p>
-        <h4>
-          A SF Sistemas é uma empresa com soluções sistêmicas para facilitar a gestão da sua
-          empresa de forma prática, fácil, com ótima relação custo benefício, aliando sempre a
-          qualidade e profissionalismo.
-        </h4>
-        <div class="botoes">
-          <button onclick="envio()">Fale Conosco</button>
-          <button wire:click="goSolucoes">Saiba Mais</button>
-        </div>
-      </div>
-      <div class="container-home-down">
-        <img src="{{ asset('imagens/Mobile/Homem.png') }}" alt="" class="homem-home" id="homem-home" />
-      </div>
-    </div>
-    <livewire:componentes.footer.footer />
-  </main>
-  <script>
-    window.addEventListener('DOMContentLoaded', function() {
-      if (window.innerWidth < 820) {
-        document.getElementById('home-main-desktop').style.display = 'none';
-        document.getElementById('home-footer-desktop').style.display = 'none';
-        // Livewire.dispatch('mobile')
-      } else {
-        document.getElementById('home-main-mobile').style.display = 'none';
-      }
-    })
-  </script>
-  <style>
-    main {
-      background-color: var(--cinza-principal);
-      height: 80vh;
-    }
-
-    .container-home {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      height: 70vh;
-    }
-
-    .container-home-left {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-
-      align-items: start;
-      padding-left: 10rem;
-      gap: 1rem;
-    }
-
-    .container-home-left h1 {
-      font-size: 2.5rem;
-      width: 85%;
-      font-family: Be Vietnam Pro, sans-serif;
-      font-weight: 700;
-      color: white;
-    }
-
-    .container-home-left h1 span {
-      color: var(--azul-principal);
-    }
-
-    .container-home-left h4 {
-      font-size: 1rem;
-      width: 80%;
-      font-family: Be Vietnam Pro, sans-serif;
-      color: white;
-    }
-
-    .botoes {
-      display: flex;
-      gap: 1rem;
-      width: 57%;
-    }
-
-    .botoes button {
-      font-family: Nunito, sans-serif;
-      font-size: 1rem;
-      font-weight: bold;
-      text-transform: none;
-      color: var(--azul-principal);
-      border: 1px solid var(--azul-principal);
-      transition: 0.5s ease;
-      padding: 0.5rem 2rem;
-    }
-
-    .botoes button:hover {
-      color: white;
-      border: none;
-      background-color: var(--azul-principal);
-    }
-
-    .container-home-right {
-      display: flex;
-
-      align-items: center;
-      justify-content: center;
-    }
-
-    .container-home-right img {
-      height: 500px;
-    }
-
-    .footer {
-      width: 100vw;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-    }
-
-    .whatsapp-icon {
-      position: absolute;
-      width: 5rem;
-      height: 5rem;
-      top: -40px;
-      right: 50px;
-    }
-
-    .subfooter {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      padding: 1rem 1rem 1rem 7rem;
-      background-color: white;
-    }
-
-    .subfooter-right {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      column-gap: 3rem;
-    }
-
-    .subfooter-left p {
-      width: 25%;
-      font-size: 0.875rem;
-      font-family: Be Vietnam Pro, sans-serif;
-      color: var(--cinza-terceario);
-    }
-
-    .guias,
-    .endereco {
-      display: flex;
-      flex-direction: column;
-
-    }
-
-    .guias p,
-    .endereco p {
-      font-family: Be Vietnam Pro, sans-serif;
-      font-size: 0.875rem;
-      font-weight: 700;
-      color: var(--cinza-secundario);
-      padding-bottom: 0.5rem;
-    }
-
-    .guias a,
-    .endereco span {
-      font-family: Be Vietnam Pro, sans-serif;
-      font-size: 0.8125rem;
-      text-decoration: none;
-      color: var(--cinza-terceario);
-    }
-
-    .social {
-      height: 100%;
-      display: flex;
-      align-items: end;
-
-      gap: 0.5rem;
-    }
-
-    .social>button {
-      background-color: transparent;
-      border: none;
-      color: var(--cinza-secundario);
-    }
-
-    @media screen and (max-width: 2560px) {
-
-      #home-footer-desktop,
-      #home-main-desktop {
-        display: block;
-      }
-
-      #home-main-mobile {
-        display: none;
-      }
-
-      .container-home {
-        height: 70vh;
-      }
-
-      .container-home-left {
-        padding-left: calc(10rem * 2560 / 1920);
-        gap: calc(1rem * 2560 / 1920);
-      }
-
-      .container-home-left h1 {
-        font-size: calc(2.5rem * 2560 / 1920);
-        width: 85%;
-      }
-
-      .container-home-left h4 {
-        font-size: calc(1rem * 2560 / 1920);
-        width: 80%;
-      }
-
-      .botoes {
-        gap: calc(1rem * 2560 / 1920);
-        width: 57%;
-      }
-
-      .botoes button {
-        font-size: calc(1rem * 2560 / 1920);
-        padding: 0.5rem 2rem;
-      }
-
-      .container-home-right img {
-        height: calc(500px * 2560 / 1920);
-      }
-
-      .whatsapp-icon {
-        position: absolute;
-        top: -40px;
-        right: 50px;
-      }
-
-      .subfooter {
-        padding: calc(1rem * 2560 / 1920) calc(1rem * 2560 / 1920) calc(1rem * 2560 / 1920) calc(7rem * 2560 / 1920);
-        border-radius: calc(30px * 2560 / 1920) calc(30px * 2560 / 1920) 0 0;
-      }
-
-      .subfooter-right {
-        column-gap: calc(3rem * 2560 / 1920);
-      }
-
-      .subfooter-left p {
-        width: 25%;
-        font-size: calc(0.875rem * 2560 / 1920);
-      }
-
-      .guias p,
-      .endereco p {
-        font-size: calc(0.875rem * 2560 / 1920);
-        padding-bottom: calc(0.5rem * 2560 / 1920);
-      }
-
-      .guias a,
-      .endereco span {
-        font-size: calc(0.8125rem * 2560 / 1920);
-      }
-
-      .social {
-        height: 100%;
-        gap: calc(0.5rem * 2560 / 1920);
-      }
-    }
-
-    @media screen and (max-width: 1920px) {
-      .container-home {
-        height: 70vh;
-      }
-
-      .container-home-left {
-        padding-left: calc(10rem * 1920 / 1920);
-        gap: calc(1rem * 1920 / 1920);
-      }
-
-      .container-home-left h1 {
-        font-size: calc(2.5rem * 1920 / 1920);
-        width: 85%;
-      }
-
-      .container-home-left h4 {
-        font-size: calc(1rem * 1920 / 1920);
-        width: 80%;
-      }
-
-      .botoes {
-        gap: calc(1rem * 1920 / 1920);
-        width: 57%;
-      }
-
-      .botoes button {
-        font-size: calc(1rem * 1920 / 1920);
-        padding: 0.5rem 2rem;
-      }
-
-      .container-home-right img {
-        height: calc(500px * 1920 / 1920);
-      }
-
-      .whatsapp-icon {
-        position: absolute;
-        top: -40px;
-        right: 50px;
-      }
-
-      .subfooter {
-        padding: calc(1rem * 1920 / 1920) calc(1rem * 1920 / 1920) calc(1rem * 1920 / 1920) calc(7rem * 1920 / 1920);
-        border-radius: calc(30px * 1920 / 1920) calc(30px * 1920 / 1920) 0 0;
-      }
-
-      .subfooter-right {
-        column-gap: calc(3rem * 1920 / 1920);
-      }
-
-      .subfooter-left p {
-        width: 25%;
-        font-size: calc(0.875rem * 1920 / 1920);
-      }
-
-      .guias p,
-      .endereco p {
-        font-size: calc(0.875rem * 1920 / 1920);
-        padding-bottom: calc(0.5rem * 1920 / 1920);
-      }
-
-      .guias a,
-      .endereco span {
-        font-size: calc(0.8125rem * 1920 / 1920);
-      }
-
-      .social {
-        height: 100%;
-        gap: calc(0.5rem * 1920 / 1920);
-      }
-    }
-
-    @media screen and (max-width: 1600px) {
-      .container-home {
-        height: 70vh;
-      }
-
-      .container-home-left {
-        padding-left: calc(10rem * 1600 / 1920);
-        gap: calc(1rem * 1600 / 1920);
-      }
-
-      .container-home-left h1 {
-        font-size: calc(2.5rem * 1600 / 1920);
-        width: 85%;
-      }
-
-      .container-home-left h4 {
-        font-size: calc(1rem * 1600 / 1920);
-        width: 80%;
-      }
-
-      .botoes {
-        gap: calc(1rem * 1600 / 1920);
-        width: 57%;
-      }
-
-      .botoes button {
-        font-size: calc(1rem * 1600 / 1920);
-        padding: 0.5rem 2rem;
-      }
-
-      .container-home-right img {
-        height: calc(500px * 1600 / 1920);
-      }
-
-      .whatsapp-icon {
-        position: absolute;
-        top: -40px;
-        right: 50px;
-      }
-
-      .subfooter {
-        padding: calc(1rem * 1600 / 1920) calc(1rem * 1600 / 1920) calc(1rem * 1600 / 1920) calc(7rem * 1600 / 1920);
-        border-radius: calc(30px * 1600 / 1920) calc(30px * 1600 / 1920) 0 0;
-      }
-
-      .subfooter-right {
-        column-gap: calc(3rem * 1600 / 1920);
-      }
-
-      .subfooter-left p {
-        width: 25%;
-        font-size: calc(0.875rem * 1600 / 1920);
-      }
-
-      .guias p,
-      .endereco p {
-        font-size: calc(0.875rem * 1600 / 1920);
-        padding-bottom: calc(0.5rem * 1600 / 1920);
-      }
-
-      .guias a,
-      .endereco span {
-        font-size: calc(0.8125rem * 1600 / 1920);
-      }
-
-      .social {
-        height: 100%;
-        gap: calc(0.5rem * 1600 / 1920);
-      }
-    }
-
-    @media screen and (max-width: 1440px) {
-      .container-home {
-        height: 70vh;
-      }
-
-      .container-home-left {
-        padding-left: calc(10rem * 1440 / 1920);
-        gap: calc(1rem * 1440 / 1920);
-      }
-
-      .container-home-left h1 {
-        font-size: calc(2.5rem * 1440 / 1920);
-        width: 85%;
-      }
-
-      .container-home-left h4 {
-        font-size: calc(1rem * 1440 / 1920);
-        width: 80%;
-      }
-
-      .botoes {
-        gap: calc(1rem * 1440 / 1920);
-        width: 57%;
-      }
-
-      .botoes button {
-        font-size: calc(1rem * 1440 / 1920);
-        padding: 0.5rem 2rem;
-      }
-
-      .container-home-right img {
-        height: calc(500px * 1440 / 1920);
-      }
-
-      .whatsapp-icon {
-        position: absolute;
-        top: -40px;
-        right: 50px;
-      }
-
-      .subfooter {
-        padding: calc(1rem * 1440 / 1920) calc(1rem * 1440 / 1920) calc(1rem * 1440 / 1920) calc(7rem * 1440 / 1920);
-        border-radius: calc(30px * 1440 / 1920) calc(30px * 1440 / 1920) 0 0;
-      }
-
-      .subfooter-right {
-        column-gap: calc(3rem * 1440 / 1920);
-      }
-
-      .subfooter-left p {
-        width: 25%;
-        font-size: calc(0.875rem * 1440 / 1920);
-      }
-
-      .guias p,
-      .endereco p {
-        font-size: calc(0.875rem * 1440 / 1920);
-        padding-bottom: calc(0.5rem * 1440 / 1920);
-      }
-
-      .guias a,
-      .endereco span {
-        font-size: calc(0.8125rem * 1440 / 1920);
-      }
-
-      .social {
-        height: 100%;
-        gap: calc(0.5rem * 1440 / 1920);
-      }
-    }
-
-    @media screen and (max-width: 1366px) {
-      .container-home {
-        height: 50vh;
-      }
-
-      .container-home-left {
-        padding-left: calc(10rem * 1366 / 1920);
-        gap: calc(1rem * 1366 / 1920);
-      }
-
-      .container-home-left h1 {
-        font-size: calc(2.5rem * 1366 / 1920);
-        width: 85%;
-      }
-
-      .container-home-left h4 {
-        font-size: calc(1rem * 1366 / 1920);
-        width: 80%;
-      }
-
-      .botoes {
-        gap: calc(1rem * 1366 / 1920);
-        width: 57%;
-      }
-
-      .botoes button {
-        font-size: calc(1rem * 1366 / 1920);
-        padding: 0.5rem 2rem;
-      }
-
-      .container-home-right img {
-        height: calc(500px * 1366 / 1920);
-      }
-
-      .whatsapp-icon {
-        position: absolute;
-        top: -40px;
-        right: 50px;
-      }
-
-      .subfooter {
-        padding: calc(1rem * 1366 / 1920) calc(1rem * 1366 / 1920) calc(1rem * 1366 / 1920) calc(7rem * 1366 / 1920);
-        border-radius: calc(30px * 1366 / 1920) calc(30px * 1366 / 1920) 0 0;
-      }
-
-      .subfooter-right {
-        column-gap: calc(3rem * 1366 / 1920);
-      }
-
-      .subfooter-left p {
-        width: 25%;
-        font-size: calc(0.875rem * 1366 / 1920);
-      }
-
-      .guias p,
-      .endereco p {
-        font-size: calc(0.875rem * 1366 / 1920);
-        padding-bottom: calc(0.5rem * 1366 / 1920);
-      }
-
-      .guias a,
-      .endereco span {
-        font-size: calc(0.8125rem * 1366 / 1920);
-      }
-
-      .social {
-        height: 100%;
-        gap: calc(0.5rem * 1366 / 1920);
-      }
-    }
-
-    @media screen and (max-width: 1280px) {
-      .container-home {
-        height: 50vh;
-      }
-
-      .container-home-left {
-        padding-left: calc(10rem * 1280 / 1920);
-        gap: calc(1rem * 1280 / 1920);
-      }
-
-      .container-home-left h1 {
-        font-size: calc(2.5rem * 1280 / 1920);
-        width: 85%;
-      }
-
-      .container-home-left h4 {
-        font-size: calc(1rem * 1280 / 1920);
-        width: 80%;
-      }
-
-      .botoes {
-        gap: calc(1rem * 1280 / 1920);
-        width: 57%;
-      }
-
-      .botoes button {
-        font-size: calc(1rem * 1280 / 1920);
-        padding: 0.5rem 2rem;
-      }
-
-      .container-home-right img {
-        height: calc(500px * 1280 / 1920);
-      }
-
-      .whatsapp-icon {
-        position: absolute;
-        top: -40px;
-        right: 50px;
-      }
-
-      .subfooter {
-        padding: calc(1rem * 1280 / 1920) calc(1rem * 1280 / 1920) calc(1rem * 1280 / 1920) calc(7rem * 1280 / 1920);
-        border-radius: calc(30px * 1280 / 1920) calc(30px * 1280 / 1920) 0 0;
-      }
-
-      .subfooter-right {
-        column-gap: calc(3rem * 1280 / 1920);
-      }
-
-      .subfooter-left p {
-        width: 25%;
-        font-size: calc(0.875rem * 1280 / 1920);
-      }
-
-      .guias p,
-      .endereco p {
-        font-size: calc(0.875rem * 1280 / 1920);
-        padding-bottom: calc(0.5rem * 1280 / 1920);
-      }
-
-      .guias a,
-      .endereco span {
-        font-size: calc(0.8125rem * 1280 / 1920);
-      }
-
-      .social {
-        height: 100%;
-        gap: calc(0.5rem * 1280 / 1920);
-      }
-    }
-
-    @media screen and (max-width: 1024px) {
-      .container-home {
-        height: 70vh;
-      }
-
-      .container-home-left {
-        padding-left: calc(10rem * 1024 / 1920);
-        gap: calc(1rem * 1024 / 1920);
-      }
-
-      .container-home-left h1 {
-        font-size: calc(2.5rem * 1024 / 1920);
-        width: 85%;
-      }
-
-      .container-home-left h4 {
-        font-size: calc(1rem * 1024 / 1920);
-        width: 80%;
-      }
-
-      .botoes {
-        gap: calc(1rem * 1024 / 1920);
-        width: 57%;
-      }
-
-      .botoes button {
-        font-size: calc(1rem * 1024 / 1920);
-        padding: 0.5rem 2rem;
-      }
-
-      .container-home-right img {
-        height: calc(500px * 1024 / 1920);
-      }
-
-      .whatsapp-icon {
-        position: absolute;
-        top: -40px;
-        right: 50px;
-      }
-
-      .subfooter {
-        padding: calc(1rem * 1024 / 1920) calc(1rem * 1024 / 1920) calc(1rem * 1024 / 1920) calc(7rem * 1024 / 1920);
-        border-radius: calc(30px * 1024 / 1920) calc(30px * 1024 / 1920) 0 0;
-      }
-
-      .subfooter-right {
-        column-gap: calc(3rem * 1024 / 1920);
-      }
-
-      .subfooter-left p {
-        width: 25%;
-        font-size: calc(0.875rem * 1024 / 1920);
-      }
-
-      .guias p,
-      .endereco p {
-        font-size: calc(0.875rem * 1024 / 1920);
-        padding-bottom: calc(0.5rem * 1024 / 1920);
-      }
-
-      .guias a,
-      .endereco span {
-        font-size: calc(0.8125rem * 1024 / 1920);
-      }
-
-      .social {
-        height: 100%;
-        gap: calc(0.5rem * 1024 / 1920);
-      }
-    }
-
-    @media screen and (max-width: 820px) {
-
-      #home-footer-desktop,
-      #home-main-desktop {
-        display: none;
-      }
-
-      #home-main-mobile {
-        display: block;
-      }
-
-      .footer {
-        display: none;
-      }
-
-      main {
-        height: 94vh;
-      }
-
-      .container-home {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        gap: 1rem;
-        height: 100%;
-      }
-
-      .container-home-top {
-        padding-top: calc(5rem * 820 / 820);
-        padding-left: calc(3rem * 820 / 820);
-        width: 85%;
-        display: flex;
-        flex-direction: column;
-        gap: calc(1rem * 820 / 820);
-      }
-
-      .container-home-down {
-        background-color: #1E1E1E;
-        display: flex;
-        flex-direction: row-reverse;
-      }
-
-      .container-home-top h1 {
-        font-size: calc(2rem * 820 / 820);
-        font-family: Be Vietnam Pro, sans-serif;
-        font-weight: 700;
-        color: white;
-      }
-
-      .container-home-top h1 span {
-        color: var(--azul-principal);
-      }
-
-      .container-home-top h4 {
-        line-height: 24px;
-        font-size: calc(1rem * 820 / 820);
-
-        line-height: 16px;
-        width: 75%;
-        font-family: Be Vietnam Pro, sans-serif;
-        color: white;
-        font-weight: 400;
-      }
-
-      .botoes {
-        display: flex;
-        gap: 1rem;
-        width: 100%;
-      }
-
-      .botoes button {
-        padding: .5rem 1rem;
-        font-size: calc(1rem * 820 / 820);
-        border-radius: 5px;
-      }
-
-      .botoes button:first-child {
-        background-color: var(--azul-principal);
-        color: white;
-      }
-
-      .tijolo {
-        position: absolute;
-        right: 0;
-        top: 250px;
-      }
-
-      .homem-home {
-
-        height: 400px;
-        bottom: 0;
-        right: 0;
-      }
-    }
-
-    @media screen and (max-width: 600px) {
-      main {
-        height: 94vh;
-      }
-
-      .container-home {
-        display: flex;
-        flex-direction: column;
-      }
-
-      .container-home-top {
-        padding-top: calc(5rem * 820 / 820);
-        padding-left: calc(3rem * 820 / 820);
-        width: 85%;
-        display: flex;
-        flex-direction: column;
-        gap: calc(1rem * 820 / 820);
-      }
-
-      .container-home-top h1 {
-        font-size: calc(2rem * 820 / 820);
-        font-family: Be Vietnam Pro, sans-serif;
-        font-weight: 700;
-        color: white;
-      }
-
-      .container-home-top h1 span {
-        color: var(--azul-principal);
-      }
-
-      .container-home-top h4 {
-        line-height: 24px;
-        font-size: calc(1rem * 820 / 820);
-
-        width: 65%;
-        font-family: Be Vietnam Pro, sans-serif;
-        color: white;
-        font-weight: 400;
-      }
-
-      .botoes button {
-        font-size: calc(1rem * 820 / 820);
-        padding: calc(.5rem * 820 / 820) calc(1rem * 820 / 820);
-      }
-
-      .tijolo {
-        position: absolute;
-        right: 0;
-        top: 250px;
-      }
-
-      .homem-home {
-
-        height: calc(400px * 600 / 820);
-        bottom: 0;
-        right: 0;
-      }
-    }
-
-    @media screen and (max-width: 500px) {
-      .container-home-top h4 {
-        line-height: 24px;
-        width: 85%;
-      }
-    }
-
-    @media screen and (max-width: 450px) {
-      .container-home {
-        display: flex;
-        flex-direction: column;
-      }
-
-      .container-home-top {
-        padding-top: calc(5rem * 400 / 820);
-        padding-left: calc(3rem * 400 / 820);
-        display: flex;
-        flex-direction: column;
-        gap: calc(1rem * 600 / 820);
-      }
-
-      .container-home-top h1 {
-        font-size: 1.5rem;
-        width: 90%;
-        font-family: Be Vietnam Pro, sans-serif;
-        font-weight: 700;
-        color: white;
-      }
-
-      .container-home-top h1 span {
-        color: var(--azul-principal);
-      }
-
-      .container-home-top h4 {
-        line-height: 24px;
-        font-size: 1rem;
-        width: 75%;
-        font-family: Be Vietnam Pro, sans-serif;
-        color: white;
-        font-weight: 400;
-      }
-
-      .botoes button {
-        font-size: 0.8rem;
-      }
-
-      .tijolo {
-        position: absolute;
-        right: 0;
-        top: 150px;
-      }
-
-      .homem-home {
-
-        height: 280px;
-        bottom: 0;
-        right: 0;
-      }
-    }
-
-    @media screen and (max-width: 360px) {
-      .homem-home {
-        height: 230px;
-        bottom: 0;
-        right: 0;
-      }
-
-      .container-home-top h1 {
-        font-size: 1.5rem;
-        width: 90%;
-        font-family: Be Vietnam Pro, sans-serif;
-        font-weight: 700;
-        color: white;
-      }
-
-      .container-home-top h4 {
-        font-size: 1rem;
-        width: 95%;
-        font-family: Be Vietnam Pro, sans-serif;
-        line-height: 24px;
-        color: white;
-        font-weight: 400;
-      }
-
-    }
-
-  </style>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/5567999832455" target="_blank" class="fixed bottom-8 right-8 z-50 w-16 h-16 bg-green-500 rounded-full flex items-center justify-center shadow-lg hover:bg-green-600 transition-all duration-300 transform hover:scale-110 animate-pulse">
+        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+    </a>
+
+    <style>
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(12deg); }
+            50% { transform: translateY(-20px) rotate(12deg); }
+        }
+
+        @keyframes float-delayed {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+        }
+
+        @keyframes gentle-bounce {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .animate-float {
+            animation: float 3s ease-in-out infinite;
+        }
+
+        .animate-float-delayed {
+            animation: float-delayed 4s ease-in-out infinite;
+            animation-delay: 0.5s;
+        }
+
+        .animate-gentle-bounce {
+            animation: gentle-bounce 3s ease-in-out infinite;
+        }
+
+        .animate-slideInLeft {
+            animation: slideInLeft 1s ease-out;
+        }
+
+        .animate-slideInRight {
+            animation: slideInRight 1s ease-out;
+        }
+
+        .animate-fadeIn {
+            animation: fadeIn 0.3s ease-in;
+        }
+    </style>
 </div>

@@ -9,7 +9,7 @@
                 Conheça todos os
             </h2>
             <h3 class="text-4xl lg:text-5xl font-bold text-gray-300">
-                Módulos do Sistema SAFI
+                módulos básicos do Sistema SAFI
             </h3>
         </div>
 

@@ -6,7 +6,7 @@
         <img
           alt="Logo SF Sistemas"
           class="h-10 w-auto"
-          src="{{ $isRotaAlternativa ? asset('imagens/LogoAzul.png') : asset('imagens/Logo.png') }}"
+          src='https://sitesf.br-se1.magaluobjects.com/Logo.png'
         />
       </a>
 

@@ -53,9 +53,10 @@
                 <div class="relative z-10 transform hover:scale-105 transition-transform duration-500">
                     <!-- Coloque sua imagem aqui -->
                     <img
-                        src="{{ asset('imagens/QuemSomosImgRight.png') }}"
+                        src="https://sitesf.br-se1.magaluobjects.com/QuemSomosImgRight.png"
                         alt="SAFI Sistema Preview"
                         class="w-full h-auto drop-shadow-2xl"
+                        lazy
                     />
                 </div>
 

@@ -46,7 +46,7 @@
         <!-- Imagem principal -->
         <div class="relative z-10 transform hover:scale-105 transition-transform duration-500">
           <img
-            src="{{ asset('imagens/Servicos/ImagemSolucaoRight.png') }}"
+            src="https://sitesf.br-se1.magaluobjects.com/ImagemSolucaoRight.png"
             alt="Equipe em reunião"
             class="w-full h-auto rounded-2xl shadow-2xl" />
         </div>

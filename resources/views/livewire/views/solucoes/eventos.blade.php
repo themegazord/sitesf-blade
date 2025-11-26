@@ -41,7 +41,7 @@
                 <!-- Imagem principal -->
                 <div class="relative z-10 mb-8">
                     <img
-                        src="{{ asset('imagens/Servicos/EventosImagem.png') }}"
+                        src="https://sitesf.br-se1.magaluobjects.com/EventosImagem.png"
                         alt="Eventos"
                         class="w-full h-auto drop-shadow-2xl"
                     />

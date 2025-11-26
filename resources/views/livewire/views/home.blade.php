@@ -22,7 +22,7 @@
                 <!-- Right Illustration -->
                 <div class="relative animate-slideInRight order-1 md:order-2">
                     <!-- Character sitting with laptop -->
-                    <img src="{{ asset('imagens/HomeImgRight.png') }}" />
+                    <img src="https://sitesf.br-se1.magaluobjects.com/HomeImgRight.png" lazy/>
                 </div>
             </div>
         </div>
@@ -34,7 +34,7 @@
             <div class="grid md:grid-cols-4 gap-8">
                 <!-- Company Info -->
                 <div class="space-y-4">
-                    <div class="text-3xl font-bold text-cyan-400">SF</div>
+                    <img src='https://sitesf.br-se1.magaluobjects.com/Logo.png' />
                     <p class="text-gray-400 text-sm">
                         Soluções sistêmicas de alto padrão para sua empresa!
                     </p>

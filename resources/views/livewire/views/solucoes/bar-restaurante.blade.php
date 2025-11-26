@@ -53,7 +53,7 @@
                 <!-- Imagem principal -->
                 <div class="relative z-10 mb-8">
                     <img
-                        src="{{ asset('imagens/Servicos/BarRestauranteImagem.png') }}"
+                        src="https://sitesf.br-se1.magaluobjects.com/BarRestauranteImagem.png"
                         alt="SAFI Mobile e Desktop"
                         class="w-full h-auto drop-shadow-2xl"
                     />

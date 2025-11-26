@@ -81,7 +81,7 @@
         @foreach($parceiros as $parceiro)
         <div class="grayscale hover:grayscale-0 transition-all duration-300">
           <img
-            src="{{ asset($parceiro['logo']) }}"
+            src="{{ $parceiro['logo'] }}"
             alt="{{ $parceiro['nome'] }}"
             class="h-12 lg:h-16 w-auto object-contain" />
         </div>

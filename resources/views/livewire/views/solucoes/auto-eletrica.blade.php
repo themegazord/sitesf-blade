@@ -46,7 +46,7 @@
                 <!-- Imagem principal -->
                 <div class="relative z-10 mb-8">
                     <img
-                        src="{{ asset('imagens/Servicos/AutoElecOficinaImagem.png') }}"
+                        src="https://sitesf.br-se1.magaluobjects.com/AutoElecOficinaImagem.png"
                         alt="Auto Elétricas e Oficinas"
                         class="w-full h-auto drop-shadow-2xl"
                     />

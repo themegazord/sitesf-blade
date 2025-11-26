@@ -40,7 +40,6 @@
                 <div class="pt-6">
                     <x-button
                         label="Clique Aqui E Fale Com Nosso Time"
-                        wire:click="$dispatch('open-contact-modal')"
                         class="bg-cyan-400 hover:bg-cyan-500 text-gray-900 font-semibold px-8 py-4 rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl shadow-cyan-400/50"
                         link="https://wa.me/5567999832455"
                         external

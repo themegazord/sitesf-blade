@@ -12,10 +12,6 @@ class Home extends Component
 {
   public $isMenuOpen = false;
 
-  public function toggleMenu()
-  {
-    $this->isMenuOpen = !$this->isMenuOpen;
-  }
   public function render(): \Illuminate\Contracts\View\View|\Illuminate\Contracts\View\Factory|\Illuminate\Foundation\Application
   {
     return view('livewire.views.home');

@@ -13,7 +13,7 @@ class BarRestaurante extends Component
     'Lanchonetes',
     'Pizzarias',
     'Marmitarias',
-    'Soberias',
+    'Sobarias',
     'Restaurantes em Geral'
   ];
 

@@ -28,27 +28,26 @@ Refatoração gradual da aplicação SF Sistemas para melhorar manutenibilidade,
 
 ---
 
-## 🔷 FASE 1: Instalação e Configuração do Tailwind
+## 🔷 FASE 1: Configuração Tailwind v4 (CORRIGIDO PARA SEU PROJETO)
 
 ### Objetivo
-Preparar o projeto para usar Tailwind CSS, removendo estilos inline e adicionando configuração robusta.
+Preparar o projeto para usar Tailwind v4 CSS corretamente com daisyUI. Seu projeto **já tem Tailwind instalado**, apenas precisa de configuração correta.
 
-### 1.1 - Instalar Tailwind CSS
-**Tarefas:**
-- [ ] Instalar Tailwind via npm: `npm install -D tailwindcss postcss autoprefixer`
-- [ ] Gerar arquivo de configuração: `npx tailwindcss init -p`
-- [ ] Gerar `tailwind.config.js` e `postcss.config.js`
+### ⚠️ Situação Atual
+Seu projeto tem:
+- ✅ Tailwind v4 instalado
+- ✅ @tailwindcss/vite plugin instalado
+- ✅ daisyUI instalado
+- ⚠️ app.css NÃO tem as diretivas Tailwind v4
+- ⚠️ Sem tailwind.config.js
 
-### 1.2 - Configurar Tailwind (tailwind.config.js)
-**Arquivo:** `tailwind.config.js`
+### 1.1 - Criar tailwind.config.js (TAILWIND V4)
+**Arquivo:** `tailwind.config.js` - NOVO ARQUIVO
 
 ```javascript
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./resources/**/*.blade.php",
-    "./resources/**/*.js",
-  ],
+  // Tailwind v4 com @tailwindcss/vite não precisa de content (vite auto-detecta)
   theme: {
     extend: {
       colors: {
@@ -97,51 +96,41 @@ export default {
         '2xl': '1440px',
         '3xl': '1920px',
       },
-      boxShadow: {
-        sm: '0 1px 2px rgba(0,0,0,0.1)',
-        md: '0 4px 6px rgba(0,0,0,0.1)',
-        lg: '0 10px 15px rgba(0,0,0,0.1)',
-      },
-      borderRadius: {
-        sm: '4px',
-        md: '8px',
-        lg: '12px',
-      },
-      animation: {
-        fadeIn: 'fadeIn 0.3s ease-in-out',
-        slideUp: 'slideUp 0.3s ease-in-out',
-      },
-      keyframes: {
-        fadeIn: {
-          '0%': { opacity: '0' },
-          '100%': { opacity: '1' },
-        },
-        slideUp: {
-          '0%': { transform: 'translateY(10px)', opacity: '0' },
-          '100%': { transform: 'translateY(0)', opacity: '1' },
-        },
-      },
     },
   },
-  plugins: [],
+  plugins: [require('daisyui')],
+  daisyui: {
+    themes: ['dark', 'light'],
+  },
 }
 ```
 
 **Tarefas:**
-- [ ] Criar `tailwind.config.js` com configurações customizadas
-- [ ] Definir cores, fonts e breakpoints da marca
-- [ ] Adicionar extensões e plugins necessários
+- [ ] Criar novo arquivo `tailwind.config.js` na raiz do projeto
+- [ ] Copiar configuração acima
+- [ ] Salvar arquivo
 
-### 1.3 - Atualizar app.css para Tailwind
-**Arquivo:** `resources/css/app.css`
+### 1.2 - Atualizar app.css para Tailwind v4
+**Arquivo:** `resources/css/app.css` - SUBSTITUIR COMPLETAMENTE
 
 ```css
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* Imports de fonts */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* Customizações adicionais */
+/* Tailwind v4 - Diretivas CSS corretas */
+@import "tailwindcss";
+
+/* Customizações em @layer */
 @layer base {
+  :root {
+    --cinza-principal: #1e1e1e;
+    --cinza-secundario: #4f4f50;
+    --cinza-terceario: #515151;
+    --azul-principal: #63c7f5;
+  }
+
   html {
     @apply scroll-smooth;
   }
@@ -172,39 +161,47 @@ export default {
     @apply bg-gray-700 text-gray-50 hover:bg-gray-800 hover:-translate-y-0.5 hover:shadow-md;
   }
 }
+
+/* daisyUI (mantém como estava) */
+@plugin "daisyui" {
+    themes: light --default, dark --prefersdark;
+}
+
+/* maryUI */
+@source "../../vendor/robsontenorio/mary/src/View/Components/**/*.php";
+
+/* Theme toggle */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Mary UI pagination */
+.mary-table-pagination span[aria-current="page"] > span {
+    @apply bg-primary text-base-100
+}
+
+.mary-table-pagination button {
+    @apply cursor-pointer
+}
 ```
 
 **Tarefas:**
-- [ ] Remover CSS antigo de app.css
-- [ ] Importar as 3 diretivas do Tailwind
+- [ ] Substituir conteúdo do `resources/css/app.css`
+- [ ] Manter imports de fonts
+- [ ] Adicionar `@import "tailwindcss"` (sintaxe v4)
 - [ ] Adicionar customizações em @layer
 
-### 1.4 - Atualizar Layout Principal
-**Arquivo:** `resources/views/components/layouts/app.blade.php`
-
-Remover imports de Bootstrap e adicionar Tailwind:
-```blade
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>{{ config('app.name') }}</title>
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
-</head>
-<body>
-    <x-navbar />
-    {{ $slot }}
-    <x-footer />
-</body>
-</html>
-```
-
+### 1.3 - Testar Configuração
 **Tarefas:**
-- [ ] Remover Bootstrap CDN
-- [ ] Manter apenas Vite imports
-- [ ] Verificar que Tailwind está sendo buildado
+- [ ] Rodar `npm run dev` no terminal
+- [ ] Verificar se há erros no console
+- [ ] Abrir site no navegador
+- [ ] Verificar se Tailwind está sendo aplicado
+- [ ] Se não funcionar, check: `npm install` para atualizar dependências
+
+### 1.4 - Verificar Build
+**Tarefas:**
+- [ ] Rodar `npm run build`
+- [ ] Verificar se compila sem erros
+- [ ] Se tiver erro, rodar `npm install` e tentar novamente
 
 ---
 
